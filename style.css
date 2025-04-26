@@ -1,33 +1,99 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
-    color: #333;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
 }
-header {
-    background: #000;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
+
+header.hero {
+  background: #000;
+  color: #fff;
+  padding: 4em 2em;
+  text-align: center;
+  position: relative;
 }
-header h1 {
-    font-size: 3em;
-    font-weight: 800;
-    letter-spacing: 2px;
+header.hero h1 {
+  font-size: 4em;
+  font-weight: 800;
 }
-nav a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
+header.hero p {
+  margin-top: 0.5em;
+  font-size: 1.5em;
 }
+
+.menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 2px solid #fff;
+  padding: 0.5em 1em;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 5em 2em;
+  text-align: center;
+  z-index: 100;
+}
+.menu.open {
+  display: block;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  margin: 1.5em 0;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #000;
+}
+
 section {
-    padding: 2em;
+  padding: 4em 2em;
+  max-width: 900px;
+  margin: auto;
 }
-.project {
-    margin-bottom: 1.5em;
+section h2 {
+  font-size: 2.5em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
 }
-.project img {
-    max-width: 100%;
-    height: auto;
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
 }
+.project-card {
+  flex: 0 0 300px;
+  text-align: center;
+}
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 2em;
+  font-size: 0.9em;
+  color: #555;
+}
+
