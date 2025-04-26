@@ -3,58 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZERAH — Portfolio</title>
+  <title>ZERAH Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>ZERAH</h1>
-    <p>Creative Technologist / Media Designer</p>
-    <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+  <header>
+    <div class="logo">ZERAH</div>
+    <button class="menu-toggle">Menu</button>
   </header>
 
-  <nav id="menu" class="menu">
+  <nav class="mobile-menu">
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#activity">Activity</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Hi, I'm ZERAH. I create experiences with code and visuals.</p>
-  </section>
+  <main>
+    <section class="intro">
+      <h1>Welcome to ZERAH's Portfolio</h1>
+      <p>Creative Technologist / Designer</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="images/sample1.png" alt="Project 1">
-        <p>Project Title 1</p>
-      </div>
-      <div class="project-card">
-        <img src="images/sample2.png" alt="Project 2">
-        <p>Project Title 2</p>
-      </div>
-    </div>
-  </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>This is ZERAH's introduction based on the Figma design.</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: hello@zerah.work</p>
-    <p>Instagram: @zerah.codes</p>
-  </section>
+    <section id="research">
+      <h2>Research</h2>
+      <ul>
+        <li><a href="in/research1.html">Research 1</a></li>
+        <li><a href="in/research2.html">Research 2</a></li>
+        <li><a href="in/research3.html">Research 3</a></li>
+        <li><a href="in/research4.html">Research 4</a></li>
+      </ul>
+    </section>
+
+    <section id="project">
+      <h2>Project</h2>
+      <ul>
+        <li><a href="in/project1.html">Project 1</a></li>
+        <li><a href="in/project2.html">Project 2</a></li>
+        <li><a href="in/project3.html">Project 3</a></li>
+        <li><a href="in/project4.html">Project 4</a></li>
+      </ul>
+    </section>
+
+    <section id="activity">
+      <h2>Activity</h2>
+      <ul>
+        <li><a href="in/activity1.html">Activity 1</a></li>
+        <li><a href="in/activity2.html">Activity 2</a></li>
+        <li><a href="in/activity3.html">Activity 3</a></li>
+        <li><a href="in/activity4.html">Activity 4</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: hello@zerah.com</p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 ZERAH</p>
+    <p>&copy; 2025 ZERAH. All Rights Reserved.</p>
   </footer>
 
   <script>
-    function toggleMenu() {
-      var menu = document.getElementById('menu');
-      menu.classList.toggle('open');
-    }
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
   </script>
 </body>
 </html>
+
