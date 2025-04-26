@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research 4 - ZERAH Portfolio</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">ZERAH</div>
+    <button class="menu-toggle">Menu</button>
+  </header>
+
+  <nav class="mobile-menu">
+    <ul>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#research">Research</a></li>
+      <li><a href="../index.html#project">Project</a></li>
+      <li><a href="../index.html#activity">Activity</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h1>Research 4</h1>
+      <p>여기는 Research 4 상세 페이지입니다. 이곳에 연구 내용 상세 설명을 적으면 됩니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ZERAH. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
