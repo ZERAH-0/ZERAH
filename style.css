@@ -6,94 +6,95 @@ body {
   line-height: 1.6;
 }
 
-header.hero {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
   background: #000;
   color: #fff;
-  padding: 4em 2em;
-  text-align: center;
-  position: relative;
-}
-header.hero h1 {
-  font-size: 4em;
-  font-weight: 800;
-}
-header.hero p {
-  margin-top: 0.5em;
-  font-size: 1.5em;
 }
 
-.menu-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-toggle {
   background: none;
   border: 2px solid #fff;
   padding: 0.5em 1em;
   color: #fff;
   font-size: 1em;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.menu {
+.mobile-menu {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
+  flex-direction: column;
   background: #fff;
   width: 100%;
-  height: 100%;
-  padding: 5em 2em;
   text-align: center;
-  z-index: 100;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
-.menu.open {
-  display: block;
+
+.mobile-menu.active {
+  display: flex;
 }
-.menu ul {
+
+.mobile-menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
-.menu li {
-  margin: 1.5em 0;
+
+.mobile-menu li {
+  margin: 1em 0;
 }
-.menu a {
+
+.mobile-menu a {
   text-decoration: none;
-  font-size: 2em;
   color: #000;
+  font-size: 1.2em;
+}
+
+main {
+  padding: 2em;
 }
 
 section {
-  padding: 4em 2em;
-  max-width: 900px;
-  margin: auto;
-}
-section h2 {
-  font-size: 2.5em;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
+section h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
-.project-card {
-  flex: 0 0 300px;
-  text-align: center;
+
+ul {
+  list-style: none;
+  padding: 0;
 }
-.project-card img {
-  max-width: 100%;
-  border-radius: 8px;
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
 }
 
 footer {
-  background: #f2f2f2;
   text-align: center;
   padding: 2em;
+  background: #f8f8f8;
   font-size: 0.9em;
-  color: #555;
+  color: #777;
 }
+
 
