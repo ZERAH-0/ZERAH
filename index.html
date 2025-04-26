@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ZERAH — Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZERAH — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>ZERAH</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p><!-- 여기에 자기소개 작성 --></p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="images/sample1.png" alt="Project 1">
-            <p><!-- 프로젝트 설명 --></p>
-        </div>
-        <div class="project">
-            <img src="images/sample2.png" alt="Project 2">
-            <p><!-- 프로젝트 설명 --></p>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <!-- your.email@example.com --></p>
-        <p>Instagram: <!-- @yourhandle --></p>
-    </section>
+  <header class="hero">
+    <h1>ZERAH</h1>
+    <p>Creative Technologist / Media Designer</p>
+    <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+  </header>
+
+  <nav id="menu" class="menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Hi, I'm ZERAH. I create experiences with code and visuals.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/sample1.png" alt="Project 1">
+        <p>Project Title 1</p>
+      </div>
+      <div class="project-card">
+        <img src="images/sample2.png" alt="Project 2">
+        <p>Project Title 2</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: hello@zerah.work</p>
+    <p>Instagram: @zerah.codes</p>
+  </section>
+
+  <footer>
+    <p>© 2025 ZERAH</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
