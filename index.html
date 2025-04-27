@@ -5,82 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZERAH Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Carrois+Gothic&family=Changa+One&family=GangwonEduPower+ExtraBoldA&family=Lunasima&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">ZERAH</div>
-    <button class="menu-toggle">Menu</button>
-  </header>
 
-  <nav class="mobile-menu">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#activity">Activity</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<header class="top-header">
+  <div class="logo">ZERAH</div>
+  <div class="top-buttons">
+    <a href="index.html" class="home-btn">Home</a>
+    <a href="menu.html" class="menu-btn">Menu</a>
+  </div>
+</header>
 
-  <main>
-    <section class="intro">
-      <h1>Welcome to ZERAH's Portfolio</h1>
-      <p>Creative Technologist / Designer</p>
-    </section>
+<main>
+  <section class="hero">
+    <h1>Crafting Virtual Worlds with Creative Technologies</h1>
+    <p>Welcome to ZERAH’s Digital Portfolio</p>
+    <div class="hero-button">
+      <a href="menu.html">Enter</a>
+    </div>
+  </section>
+</main>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>This is ZERAH's introduction based on the Figma design.</p>
-    </section>
+<footer>
+  <p>&copy; 2025 ZERAH. All rights reserved.</p>
+</footer>
 
-    <section id="research">
-      <h2>Research</h2>
-      <ul>
-        <li><a href="in/research1.html">Research 1</a></li>
-        <li><a href="in/research2.html">Research 2</a></li>
-        <li><a href="in/research3.html">Research 3</a></li>
-        <li><a href="in/research4.html">Research 4</a></li>
-      </ul>
-    </section>
-
-    <section id="project">
-      <h2>Project</h2>
-      <ul>
-        <li><a href="in/project1.html">Project 1</a></li>
-        <li><a href="in/project2.html">Project 2</a></li>
-        <li><a href="in/project3.html">Project 3</a></li>
-        <li><a href="in/project4.html">Project 4</a></li>
-      </ul>
-    </section>
-
-    <section id="activity">
-      <h2>Activity</h2>
-      <ul>
-        <li><a href="in/activity1.html">Activity 1</a></li>
-        <li><a href="in/activity2.html">Activity 2</a></li>
-        <li><a href="in/activity3.html">Activity 3</a></li>
-        <li><a href="in/activity4.html">Activity 4</a></li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: hello@zerah.com</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 ZERAH. All Rights Reserved.</p>
-  </footer>
-
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
+
 
