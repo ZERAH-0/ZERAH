@@ -5,41 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research 3 - ZERAH Portfolio</title>
   <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Carrois+Gothic&family=Changa+One&family=GangwonEduPower+ExtraBoldA&family=Lunasima&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">ZERAH</div>
-    <button class="menu-toggle">Menu</button>
-  </header>
 
-  <nav class="mobile-menu">
-    <ul>
-      <li><a href="../index.html#about">About</a></li>
-      <li><a href="../index.html#research">Research</a></li>
-      <li><a href="../index.html#project">Project</a></li>
-      <li><a href="../index.html#activity">Activity</a></li>
-      <li><a href="../index.html#contact">Contact</a></li>
-    </ul>
-  </nav>
+<header class="top-header">
+  <div class="logo">ZERAH</div>
+  <div class="top-buttons">
+    <a href="../index.html" class="home-btn">Home</a>
+  </div>
+</header>
 
-  <main>
-    <section>
-      <h1>Research 3</h1>
-      <p>여기는 Research 3 상세 페이지입니다. 이곳에 연구 내용 상세 설명을 적으면 됩니다.</p>
-    </section>
-  </main>
+<main style="padding-top: 150px; text-align: center;">
+  <h1 style="font-family: 'GangwonEduPower', sans-serif; font-size: 36px;">Research 3</h1>
 
-  <footer>
-    <p>&copy; 2025 ZERAH. All Rights Reserved.</p>
-  </footer>
+  <div style="margin-top: 50px;">
+    <img src="../images/research3.png" alt="Research 3" style="width: 300px; height: 300px; border: 2px solid black;">
+    <p style="font-family: 'Lunasima', sans-serif; font-size: 18px; margin-top: 20px;">
+      Research 3 description goes here.
+    </p>
+  </div>
+</main>
 
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
+<footer>
+  <p>&copy; 2025 ZERAH. All rights reserved.</p>
+</footer>
 
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
