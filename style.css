@@ -1,29 +1,23 @@
-/* 기본 세팅 */
 body {
   margin: 0;
   padding: 0;
+  background-color: #f5f7fa;
   font-family: 'Lunasima', sans-serif;
-  background: #f5f7fa; /* 기본 컬러칩 배경색 */
   color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* 상단 헤더 */
 .top-header {
   width: 100%;
-  background-color: #000;
+  background: #000;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  box-sizing: border-box;
   position: fixed;
   top: 0;
+  left: 0;
+  box-sizing: border-box;
   z-index: 1000;
 }
 
@@ -32,40 +26,35 @@ a {
   font-size: 28px;
 }
 
-.top-buttons {
-  display: flex;
-  gap: 20px;
-}
-
-.home-btn, .menu-btn {
+.top-buttons a {
   font-family: 'Changa One', sans-serif;
-  background: none;
-  border: 2px solid white;
+  margin-left: 20px;
   padding: 8px 16px;
+  border: 2px solid #fff;
   border-radius: 5px;
-  font-size: 16px;
   color: white;
+  text-decoration: none;
+  font-size: 16px;
   transition: background 0.3s;
 }
 
-.home-btn:hover, .menu-btn:hover {
+.top-buttons a:hover {
   background: white;
   color: black;
 }
 
-/* 메인 Hero 영역 */
-.hero {
-  padding-top: 150px;
+.main-container {
+  padding-top: 120px;
   text-align: center;
 }
 
-.hero h1 {
+.main-title {
   font-family: 'Carrois Gothic', sans-serif;
   font-size: 40px;
   margin-bottom: 20px;
 }
 
-.hero p {
+.subtitle {
   font-family: 'Lunasima', sans-serif;
   font-size: 20px;
   margin-bottom: 40px;
@@ -78,6 +67,7 @@ a {
   background: black;
   color: white;
   border-radius: 5px;
+  text-decoration: none;
   transition: background 0.3s;
 }
 
@@ -85,7 +75,12 @@ a {
   background: #444;
 }
 
-/* 푸터 */
+.hero-image img {
+  margin-top: 50px;
+  width: 300px; /* 네 피그마 기준 사이즈에 맞춰 조정 */
+  height: auto;
+}
+
 footer {
   margin-top: 100px;
   padding: 20px;
