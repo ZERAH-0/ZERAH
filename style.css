@@ -1,196 +1,151 @@
-/* 기본 초기화 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* style.css */
 
 body {
+  margin: 0;
+  background: #FFFEFB;
   font-family: 'Lunasima', sans-serif;
-  background-color: #FFFEFB;
-  overflow-x: hidden;
-  color: black;
 }
 
 .container {
+  position: relative;
   width: 1728px;
+  height: 6596px;
+  overflow: hidden;
+  background: #FFFEFB;
   margin: 0 auto;
-  position: relative;
 }
 
-/* 헤더 */
-.header {
-  width: 100%;
-  height: 396px;
-  background-color: black;
+.black-footer {
+  position: absolute;
+  width: 1776px;
+  height: 122px;
+  background: black;
+}
+
+.footer-text {
+  position: absolute;
+  width: 1079px;
+  height: 96px;
   color: white;
+  font-size: 25px;
+  font-family: 'Bakbak One', sans-serif;
+  font-weight: 400;
+  line-height: 30px;
   text-align: center;
-  padding-top: 85px;
-  position: relative;
-}
-
-.header h1 {
-  font-family: 'Fugaz One', cursive;
-  font-size: 100px;
-}
-
-.header p {
-  font-size: 40px;
-  font-family: 'Carrois Gothic', sans-serif;
-  letter-spacing: 3.2px;
-  margin-top: 40px;
-}
-
-.button {
-  width: 156px;
-  height: 72px;
-  border: 5px solid white;
-  color: white;
-  font-size: 30px;
-  font-family: 'Changa One', cursive;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 39px;
-  background-color: transparent;
-}
-
-.button.left {
-  left: 37px;
-}
-
-.button.right {
-  right: 37px;
-}
-
-.section {
-  padding: 120px;
-  position: relative;
 }
 
 .section-title {
-  font-family: 'Bakbak One', cursive;
+  color: black;
   font-size: 70px;
-  margin-bottom: 40px;
-}
-
-.more-button {
-  position: absolute;
-  top: 10px;
-  right: 40px;
-  border: 3px solid black;
-  padding: 10px 20px;
-  font-size: 30px;
-  font-family: 'Changa One', cursive;
-  background: transparent;
-}
-
-.separator {
-  border-top: 3px solid black;
-  margin: 20px 0;
-}
-
-.image-text-block {
-  display: flex;
-  gap: 40px;
-  margin-top: 40px;
-  align-items: flex-start;
-}
-
-.image-text-block img {
-  border: 1px solid black;
-  width: 436px;
-  height: 534px;
-}
-
-.image-text-block p {
-  font-size: 20px;
+  font-family: 'Bakbak One', sans-serif;
+  font-weight: 400;
   line-height: 30px;
-  font-weight: 400;
-  flex: 1;
-  text-align: center;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.grid-4 img,
-.grid-2 img {
-  width: 100%;
-  height: auto;
-  border: 1px solid black;
-}
-
-.title {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-.description {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.section.blue {
-  background-color: #D0DFEC;
-}
-
-.footer {
-  background-color: black;
-  height: 122px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-family: 'Bakbak One', cursive;
-  font-size: 25px;
-  text-align: center;
-  line-height: 30px;
-  padding: 0 100px;
+  position: absolute;
 }
 
-.contact-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.contact-row {
+.more-btn-box {
+  position: absolute;
+  background: rgba(217, 217, 217, 0);
+  border: 3px solid black;
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  font-size: 30px;
+  font-family: 'Changa One', sans-serif;
+  color: black;
+}
+
+.email, .linkedin, .github {
+  position: absolute;
   font-size: 35px;
+  font-family: 'Lunasima', sans-serif;
   font-weight: 700;
+  color: black;
 }
 
-.contact-row img {
-  width: 60px;
-  height: auto;
+.contact-icon {
+  position: absolute;
 }
 
-.contact-flex {
+h1.logo {
+  position: absolute;
+  font-size: 100px;
+  font-family: 'Fugaz One', sans-serif;
+  color: white;
   display: flex;
-  gap: 100px;
-  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-flex img {
-  width: 300px;
-  height: auto;
+.top-bar {
+  position: absolute;
+  background: black;
+  width: 1772px;
+  height: 396px;
 }
 
-.mascot {
-  width: 240px;
-  height: auto;
-  margin-top: 30px;
-  float: right;
+.top-quote {
+  position: absolute;
+  font-size: 40px;
+  font-family: 'Carrois Gothic', sans-serif;
+  color: white;
+  text-align: center;
+  letter-spacing: 3.2px;
+}
+
+.menu-box, .home-box {
+  position: absolute;
+  background: rgba(217, 217, 217, 0);
+  border: 5px solid white;
+  color: white;
+  font-size: 30px;
+  font-family: 'Changa One', sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72.58px;
+  width: 156px;
+}
+
+hr.section-line {
+  position: absolute;
+  width: 1473.45px;
+  outline: 3px solid black;
+  outline-offset: -1.5px;
+}
+
+.image-box {
+  position: absolute;
+  border: 1px solid black;
+  object-fit: cover;
+}
+
+.text-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  font-family: 'Lunasima', sans-serif;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.text-box.title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.text-box.body {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
