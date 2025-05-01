@@ -143,21 +143,25 @@ body {
   width: 239px;
   height: 240px;
   margin-top: 10px;
+  border: 1px solid black;
 }
 
 .research-img {
   width: 297px;
   height: 404px;
+  border: 1px solid black;
 }
 
 .project-img {
   width: 670px;
   height: 335px;
+  border: 1px solid black;
 }
 
 .activity-img {
   width: 525px;
   height: 552px;
+  border: 1px solid black;
 }
 
 .contact-img {
