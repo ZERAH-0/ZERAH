@@ -11,6 +11,7 @@ body {
   color: black;
 }
 
+/* Header */
 .header {
   background: black;
   color: white;
@@ -42,15 +43,10 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
+.nav-button.left { left: 20px; }
+.nav-button.right { right: 20px; }
 
-.nav-button.left {
-  left: 20px;
-}
-
-.nav-button.right {
-  right: 20px;
-}
-
+/* Sections */
 .content-section,
 .blue-section {
   padding: 60px 100px;
@@ -82,7 +78,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 100px;
-  top: 90px; /* 너무 위로 가지 않도록 값 조정 */
+  top: 90px;
   z-index: 1;
 }
 
@@ -93,45 +89,31 @@ body {
   margin: 20px 0;
 }
 
+/* Grids & Blocks */
 .image-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
 }
-
 .image-block {
   text-align: center;
 }
-
 .image-block img {
   border: 1px solid black;
   display: block;
   margin: 0 auto;
 }
-
 .image-title {
   font-weight: 700;
   margin-top: 10px;
 }
-
 .image-desc {
   font-weight: 400;
   font-size: 14px;
 }
 
-.contact-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 15px 0;
-  font-size: 18px;
-}
-
-.contact-icon {
-  font-size: 24px;
-}
-
+/* Footer */
 .footer {
   text-align: center;
   font-size: 10px;
@@ -141,115 +123,73 @@ body {
   font-family: 'Bakbak One', sans-serif;
 }
 
-/* 이미지 별 클래스 */
+/* About */
 .about-img {
   width: 437px;
   height: 534px;
   border: 1px solid black;
 }
-
-.mascot-img {
-  position: absolute;
-  bottom: -30px;
-  right: -30px;
-  width: 120px;
-  height: auto;
-  z-index: 2;
-  border: 1px solid black;
-}
-
-.about-image-container {
+.about-image-wrapper {
   position: relative;
   width: 437px;
   height: 534px;
 }
+.about-mascot-img {
+  position: absolute;
+  bottom: -80px;
+  right: -90px;
+  width: 239px;
+  height: 240px;
+}
 
+/* Image Sections */
 .research-img {
   width: 297px;
   height: 404px;
   border: 1px solid black;
 }
-
 .project-img {
   width: 670px;
   height: 335px;
   border: 1px solid black;
 }
-
 .activity-img {
   width: 525px;
   height: 552px;
   border: 1px solid black;
 }
 
-.contact-img {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-}
-
-.mascot-img-bottom {
-  width: 239px;
-  height: 240px;
-  margin-top: 10px;
-}
-
-.about-image-wrapper {
-  position: relative;
-  width: 437px;
-  height: 534px;
-}
-
-.about-img {
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-}
-
-.about-mascot-img {
-  position: absolute;
-  bottom: -80px; /* 조절 가능 */
-  right: -90px;  /* 조절 가능 */
-  width: 239px;
-  height: 240px;
-}
-
+/* Contact */
 .contact-container {
   position: relative;
 }
-
 .contact-grid {
   display: flex;
   align-items: flex-start;
   position: relative;
   margin-top: 40px;
 }
-
 .contact-image-wrapper {
   position: relative;
   width: 478px;
   height: 369px;
   margin-right: 60px;
 }
-
 .contact-img {
   width: 100%;
   height: 100%;
   border: 1px solid black;
 }
-
 .contact-mascot-img {
   position: absolute;
   width: 298px;
   height: 298px;
-  transform: rotate(-12deg);
+  transform: rotate(-12deg) scaleX(-1);
   bottom: -30px;
   left: 340px;
   transform-origin: center center;
   z-index: 2;
 }
-
-
 .contact-text {
   display: flex;
   flex-direction: column;
@@ -259,17 +199,14 @@ body {
   font-size: 35px;
   gap: 40px;
 }
-
 .contact-line {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .contact-icon {
   font-size: 50px;
 }
-
 .contact-info-text {
   font-size: 35px;
   font-weight: 700;
