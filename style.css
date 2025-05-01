@@ -242,11 +242,13 @@ body {
   position: absolute;
   width: 298px;
   height: 298px;
-  transform: rotate(168deg);
-  bottom: -100px;
-  left: 170px;
+  transform: rotate(-12deg);
+  bottom: -30px;
+  left: 340px;
+  transform-origin: center center;
   z-index: 2;
 }
+
 
 .contact-text {
   display: flex;
