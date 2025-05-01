@@ -1,69 +1,173 @@
-/* 공통 */
-img {
-  display: block;
-  object-fit: cover;
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* About 섹션 이미지 */
+body {
+  background-color: #FFFEFB;
+  font-family: 'Lunasima', sans-serif;
+  color: black;
+}
+
+.header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 20px;
+  position: relative;
+}
+
+.header h1 {
+  font-family: 'Fugaz One', sans-serif;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.nav-button {
+  position: absolute;
+  top: 20px;
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid white;
+  font-family: 'Changa One', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+  right: 20px;
+}
+
+.content-section, .blue-section {
+  padding: 60px 100px;
+  position: relative;
+}
+
+.blue-section {
+  background: #D0DFEC;
+}
+
+.section-title {
+  font-size: 36px;
+  font-family: 'Bakbak One', sans-serif;
+  margin-bottom: 10px;
+}
+
+.more-button {
+  position: absolute;
+  right: 100px;
+  top: 65px;
+  background: transparent;
+  border: 2px solid black;
+  font-family: 'Changa One', sans-serif;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.section-line {
+  width: 100%;
+  height: 3px;
+  background: black;
+  margin: 20px 0;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.image-block {
+  text-align: center;
+}
+
+.image-block img {
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-title {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.image-desc {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.contact-icon {
+  font-size: 24px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  background: black;
+  color: white;
+  padding: 20px;
+  font-family: 'Bakbak One', sans-serif;
+}
+
+/* 이미지 별 클래스 */
 .about-img {
   width: 437px;
   height: 534px;
   border: 1px solid black;
 }
 
-.about-mascot {
+.mascot-img {
   width: 239px;
   height: 240px;
-  position: absolute;
-  left: 1461.5px;
-  top: 978.91px;
+  margin-top: 10px;
 }
 
-/* Research 섹션 이미지 */
 .research-img {
   width: 297px;
   height: 404px;
-  border: 1px solid black;
 }
 
-/* Projects 섹션 이미지 */
 .project-img {
   width: 670px;
   height: 335px;
-  border: 1px solid black;
 }
 
-/* Activities 섹션 이미지 */
 .activity-img {
   width: 525px;
   height: 552px;
-  border: 1px solid black;
 }
 
-/* Contact 섹션 이미지 */
 .contact-img {
-  width: 478px;
-  height: 369px;
+  width: 200px;
+  height: 200px;
   border: 1px solid black;
 }
 
-.contact-mascot {
-  width: 298px;
-  height: 298px;
-  transform: rotate(168deg);
-  position: absolute;
-  top: 6413.84px;
-  left: 380.8px;
-}
-
-/* 기타 아이콘 */
-.icon-mail {
-  width: 59px;
-  height: 67px;
-}
-
-.icon-github {
-  width: 64px;
-  height: 64px;
+.mascot-img-bottom {
+  width: 239px;
+  height: 240px;
   margin-top: 10px;
 }
