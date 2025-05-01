@@ -11,7 +11,6 @@ body {
   color: black;
 }
 
-/* Header */
 .header {
   background: black;
   color: white;
@@ -43,10 +42,15 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
-.nav-button.left { left: 20px; }
-.nav-button.right { right: 20px; }
 
-/* Sections */
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+  right: 20px;
+}
+
 .content-section,
 .blue-section {
   padding: 60px 100px;
@@ -89,31 +93,33 @@ body {
   margin: 20px 0;
 }
 
-/* Grids & Blocks */
 .image-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
 }
+
 .image-block {
   text-align: center;
 }
+
 .image-block img {
   border: 1px solid black;
   display: block;
   margin: 0 auto;
 }
+
 .image-title {
   font-weight: 700;
   margin-top: 10px;
 }
+
 .image-desc {
   font-weight: 400;
   font-size: 14px;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   font-size: 10px;
@@ -121,19 +127,28 @@ body {
   color: white;
   padding: 20px;
   font-family: 'Bakbak One', sans-serif;
+  margin-top: 80px;
 }
 
-/* About */
+/* 이미지 별 클래스 */
 .about-img {
   width: 437px;
   height: 534px;
   border: 1px solid black;
 }
+
 .about-image-wrapper {
   position: relative;
   width: 437px;
   height: 534px;
 }
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
 .about-mascot-img {
   position: absolute;
   bottom: -80px;
@@ -142,58 +157,60 @@ body {
   height: 240px;
 }
 
-/* Image Sections */
 .research-img {
   width: 297px;
   height: 404px;
   border: 1px solid black;
 }
+
 .project-img {
   width: 670px;
   height: 335px;
   border: 1px solid black;
 }
+
 .activity-img {
   width: 525px;
   height: 552px;
   border: 1px solid black;
 }
 
-/* Contact */
 .contact-container {
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding-top: 40px;
   position: relative;
 }
 
 .contact-grid {
   display: flex;
+  justify-content: center;
   align-items: flex-start;
-  justify-content: center; /* 가운데 정렬 핵심 */
-  gap: 80px; /* 이미지와 텍스트 사이 간격 */
-  margin-top: 40px;
+  gap: 80px;
+  margin-top: 80px;
+  position: relative;
 }
 
 .contact-image-wrapper {
   position: relative;
   width: 478px;
-  height: 369px;
-  margin-right: 60px;
+  height: 368px;
 }
+
 .contact-img {
   width: 100%;
   height: 100%;
   border: 1px solid black;
 }
+
 .contact-mascot-img {
   position: absolute;
   width: 298px;
   height: 298px;
-  transform: scaleX(-1) rotate(-12deg);
-  bottom: -20px; /* 이미지 하단에 붙도록 */
-  left: 120px;   /* 이미지 중심 쪽으로 이동 */
-  transform-origin: center center;
+  transform: rotate(168deg) scaleX(-1);
+  top: 250px;
+  left: 160px;
   z-index: 2;
 }
 
@@ -201,20 +218,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 60px;
   font-family: 'Lunasima', sans-serif;
   font-weight: 700;
   font-size: 35px;
-  gap: 40px;
 }
+
 .contact-line {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
+
 .contact-icon {
   font-size: 50px;
-}
-.contact-info-text {
-  font-size: 35px;
-  font-weight: 700;
 }
