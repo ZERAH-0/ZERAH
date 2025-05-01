@@ -208,11 +208,12 @@ body {
   position: absolute;
   width: 298px;
   height: 298px;
-  transform: rotate(168deg) scaleX(-1);
-  bottom: -90px;
-  left: 120px;
+  top: 250px;
+  left: 160px;
   z-index: 2;
+  transform: rotate(168deg) scaleX(-1) scaleY(-1);
 }
+
 
 .contact-text {
   display: flex;
