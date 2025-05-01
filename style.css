@@ -185,3 +185,24 @@ body {
   height: 240px;
   margin-top: 10px;
 }
+
+.about-image-wrapper {
+  position: relative;
+  width: 437px;
+  height: 534px;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.about-mascot-img {
+  position: absolute;
+  bottom: -30px; /* 조절 가능 */
+  right: -60px;  /* 조절 가능 */
+  width: 239px;
+  height: 240px;
+}
+
