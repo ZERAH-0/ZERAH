@@ -234,3 +234,88 @@ body {
 .contact-icon {
   font-size: 50px;
 }
+
+
+
+
+/*반응형*/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+
+  .content-section,
+  .blue-section {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .more-button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    top: 70px;
+    right: 20px;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-block img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-image-wrapper,
+  .contact-image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-img,
+  .contact-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-mascot-img,
+  .contact-mascot-img {
+    position: static;
+    transform: none;
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .contact-text {
+    font-size: 16px;
+    gap: 20px;
+  }
+
+  .contact-icon {
+    font-size: 24px;
+  }
+
+  .contact-info-text {
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 8px;
+    padding: 10px;
+  }
+}
+
