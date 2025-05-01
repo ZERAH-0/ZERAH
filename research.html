@@ -1,161 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Research</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Carrois+Gothic&family=Changa+One&family=Lunasima&family=Fugaz+One&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       background: #FFFEFB;
+      font-family: 'Lunasima', sans-serif;
     }
-    .section {
-      position: relative;
-      width: 1728px;
-      height: 2352px;
-      overflow: hidden;
-    }
-    .header, .footer {
+    .absolute {
       position: absolute;
-      width: 1772px;
-      height: 396px;
-      left: -18px;
-      background: black;
     }
-    .footer-bar {
-      top: 2230px;
-      height: 122px;
-    }
-    .title-bar {
-      position: absolute;
-      width: 1473.45px;
-      height: 0px;
-      left: 127px;
-      top: 578.24px;
-      outline: 3px solid black;
-      outline-offset: -1.5px;
-    }
-    .title {
-      position: absolute;
-      left: 127.34px;
-      top: 459px;
-      font-size: 70px;
-      font-family: 'Bakbak One';
-      font-weight: 400;
-      color: black;
-    }
-    .nav-title {
-      position: absolute;
-      left: 577px;
-      top: 90.52px;
-      font-family: 'Fugaz One';
-      font-size: 100px;
-      color: white;
-      text-align: center;
-    }
-    .nav-subtitle {
-      position: absolute;
-      left: 371px;
-      top: 241px;
-      font-family: 'Carrois Gothic';
-      font-size: 40px;
-      color: white;
-      letter-spacing: 3.2px;
-      text-align: center;
-    }
-    .button {
-      position: absolute;
-      width: 156px;
-      height: 72.58px;
-      border: 5px solid white;
-      text-align: center;
+    .flex-center {
       display: flex;
       justify-content: center;
-      align-items: center;
-      font-family: 'Changa One';
-      font-size: 30px;
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer {
+      width: 1776px;
+      height: 122px;
+      background: black;
+      left: -24px;
+    }
+    .footer-text {
       color: white;
+      font-size: 25px;
+      font-family: 'Bakbak One';
+      font-weight: 400;
+      line-height: 30px;
     }
-    .button.left {
-      left: 37px;
-      top: 39px;
-    }
-    .button.right {
-      left: 1529px;
-      top: 39px;
-    }
-    .card {
-      position: absolute;
-      left: 167px;
-      width: 1422px;
-      height: 271px;
+    .title-bar {
+      height: 55px;
+      background: #BA4009;
       border: 1px solid black;
     }
-    .card-title-bar {
-      position: absolute;
-      left: 167px;
-      width: 1422px;
-      height: 55px;
-      background: #2B7E50;
-      border: 1px solid black;
-    }
-    .card-title {
-      position: absolute;
-      left: 193.72px;
-      width: 947.19px;
-      height: 55px;
-      display: flex;
-      align-items: center;
+    .title-text {
       color: white;
-      font-family: 'Lunasima';
       font-size: 30px;
       font-weight: 700;
     }
-    .footer-text {
-      position: absolute;
-      left: 322.57px;
-      top: 2242px;
-      width: 1079.17px;
-      text-align: center;
-      color: white;
+    .section-title {
       font-family: 'Bakbak One';
-      font-size: 25px;
+      font-size: 70px;
+      color: black;
       line-height: 30px;
+    }
+    .header, .footer-text {
+      text-align: center;
     }
   </style>
 </head>
 <body>
-<div class="section">
-  <div class="header"></div>
-  <div class="nav-title">ZERAH</div>
-  <div class="nav-subtitle">“Crafting virtual realities that feel alive.”</div>
-  <div class="button left">Home</div>
-  <div class="button right">Menu</div>
+  <div style="width: 1728px; height: 2352px; position: relative; overflow: hidden">
+    <div class="absolute" style="width: 1772px; height: 396px; top: 0px; background: black"></div>
+    <div class="absolute flex-center" style="width: 602px; height: 145.16px; top: 90.52px; left: 577px; color: white; font-size: 100px; font-family: 'Fugaz One';">ZERAH</div>
+    <div class="absolute flex-center" style="width: 989px; height: 68px; top: 241px; left: 371px; color: white; font-size: 40px; font-family: 'Carrois Gothic'; letter-spacing: 3.2px;">“Crafting virtual realities that feel alive.”</div>
 
-  <div class="title">Research</div>
-  <div class="title-bar"></div>
+    <div class="absolute" style="width: 156px; height: 72.58px; top: 39px; left: 37px; border: 5px solid white"></div>
+    <div class="absolute flex-center" style="width: 156px; height: 70.03px; top: 39px; left: 37px; color: white; font-size: 30px; font-family: 'Changa One';">Home</div>
 
-  <div class="card" style="top: 699px;"><img src="https://placehold.co/1422x271" width="100%" height="100%"></div>
-  <div class="card-title-bar" style="top: 644px;"></div>
-  <div class="card-title" style="top: 644px;">Title</div>
+    <div class="absolute" style="width: 156px; height: 72.58px; top: 39px; left: 1529px; border: 5px solid white"></div>
+    <div class="absolute flex-center" style="width: 156px; height: 70.03px; top: 39px; left: 1529px; color: white; font-size: 30px; font-family: 'Changa One';">Menu</div>
 
-  <div class="card" style="top: 1072px;"><img src="https://placehold.co/1422x271" width="100%" height="100%"></div>
-  <div class="card-title-bar" style="top: 1017px;"></div>
-  <div class="card-title" style="top: 1017px;">Title</div>
+    <div class="absolute section-title flex-center" style="width: 461px; height: 82px; top: 455px; left: 132px;">Projects</div>
+    <div class="absolute" style="width: 1473.45px; height: 0px; top: 578.24px; left: 127px; outline: 3px solid black; outline-offset: -1.5px;"></div>
 
-  <div class="card" style="top: 1445px;"><img src="https://placehold.co/1422x271" width="100%" height="100%"></div>
-  <div class="card-title-bar" style="top: 1390px;"></div>
-  <div class="card-title" style="top: 1390px;">Title</div>
+    <!-- 반복되는 카드들 -->
+    <!-- 카드 1 -->
+    <div class="absolute title-bar" style="width: 1422px; top: 644px; left: 167px;"></div>
+    <div class="absolute title-text flex-center" style="width: 947.19px; height: 55px; top: 644px; left: 193.72px;">Title</div>
+    <img class="absolute" style="width: 1422px; height: 271px; top: 699px; left: 167px; border: 1px solid black" src="images/project_1.png" />
 
-  <div class="card" style="top: 1818px;"><img src="https://placehold.co/1422x271" width="100%" height="100%"></div>
-  <div class="card-title-bar" style="top: 1763px;"></div>
-  <div class="card-title" style="top: 1763px;">Title</div>
+    <!-- 카드 2 -->
+    <div class="absolute title-bar" style="width: 1422px; top: 1017px; left: 167px;"></div>
+    <div class="absolute title-text flex-center" style="width: 947.19px; height: 55px; top: 1017px; left: 193.72px;">Title</div>
+    <img class="absolute" style="width: 1422px; height: 271px; top: 1072px; left: 167px; border: 1px solid black" src="images/project_2.png" />
 
-  <img src="https://placehold.co/335x336" style="position:absolute; left:1395.52px; top:1892px; width:335.33px; height:335.98px;" />
+    <!-- 카드 3 -->
+    <div class="absolute title-bar" style="width: 1422px; top: 1390px; left: 167px;"></div>
+    <div class="absolute title-text flex-center" style="width: 947.19px; height: 55px; top: 1390px; left: 193.72px;">Title</div>
+    <img class="absolute" style="width: 1422px; height: 271px; top: 1445px; left: 167px; border: 1px solid black" src="images/project_3.png" />
 
-  <div class="footer footer-bar"></div>
-  <div class="footer-text">
-    THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLI OS.<br/>@2023, JURAN KIM, ALL RIGHT RESERVED
+    <!-- 카드 4 -->
+    <div class="absolute title-bar" style="width: 1422px; top: 1763px; left: 167px;"></div>
+    <div class="absolute title-text flex-center" style="width: 947.19px; height: 55px; top: 1763px; left: 193.72px;">Title</div>
+    <img class="absolute" style="width: 1422px; height: 271px; top: 1818px; left: 167px; border: 1px solid black" src="images/project_4.png" />
+
+    <!-- 데코 캐릭터 -->
+    <img class="absolute" style="width: 352.10px; height: 352.78px; top: 2244.41px; left: 359.09px; transform: rotate(-180deg); transform-origin: top left" src="images/tomato_reverse.png" />
+
+    <!-- Footer -->
+    <div class="absolute footer" style="top: 2230px;"></div>
+    <div class="absolute footer-text flex-center" style="width: 1079.17px; height: 96px; top: 2242px; left: 322.57px;">THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br>@2023, JURAN KIM, ALL RIGHT RESERVED</div>
   </div>
-</div>
 </body>
 </html>
