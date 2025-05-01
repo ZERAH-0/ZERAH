@@ -184,12 +184,13 @@ body {
   position: absolute;
   width: 298px;
   height: 298px;
-  transform: rotate(-12deg) scaleX(-1);
-  bottom: -30px;
-  left: 340px;
+  transform: scaleX(-1) rotate(-12deg);
+  bottom: -20px; /* 이미지 하단에 붙도록 */
+  left: 120px;   /* 이미지 중심 쪽으로 이동 */
   transform-origin: center center;
   z-index: 2;
 }
+
 .contact-text {
   display: flex;
   flex-direction: column;
