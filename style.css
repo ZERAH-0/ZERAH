@@ -82,7 +82,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 100px;
-  top: 30px; /* 위치 수정 */
+  top: 50px; /* 위치 수정 */
   z-index: 1;
 }
 
