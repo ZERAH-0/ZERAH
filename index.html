@@ -1,93 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZERAH</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Changa+One&family=Fugaz+One&family=Lunasima&family=Carrois+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="logo">ZERAH</div>
-      <nav class="menu">
-        <div>Home</div>
-        <div>Menu</div>
-      </nav>
-      <div class="slogan">“Crafting virtual realities that feel alive.”</div>
-    </header>
+  <header>
+    <div class="top-bar">
+      <button class="nav-button">Home</button>
+      <h1>ZERAH</h1>
+      <button class="nav-button">Menu</button>
+    </div>
+    <p class="slogan">“Crafting virtual realities that feel alive.”</p>
+  </header>
 
-    <!-- About Section -->
-    <section class="section about">
-      <div class="section-title">About</div>
-      <div class="section-line"></div>
-      <div class="about-content">
-        <div class="about-text">글을 쓸 수 있는 구역</div>
-        <img src="https://placehold.co/437x534" alt="About Image">
+  <section class="section about">
+    <div class="section-header">
+      <h2>About</h2>
+      <button class="more-button">More</button>
+    </div>
+    <div class="about-content">
+      <p>글을 쓸 수 있는 구역</p>
+      <div class="about-images">
+        <img src="images/about_profile.png" alt="about" class="profile" />
+        <img src="images/mascot.png" alt="mascot" class="mascot" />
       </div>
-      <div class="more-button">More</div>
-      <img class="about-icon" src="https://placehold.co/239x240">
-    </section>
+    </div>
+  </section>
 
-    <!-- Research Section -->
-    <section class="section research">
-      <div class="section-title">Research</div>
-      <div class="section-line"></div>
-      <div class="grid grid-4">
-        <div class="item"><img src="https://placehold.co/297x404"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/297x404"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/297x404"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/297x404"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
+  <section class="section research">
+    <div class="section-header">
+      <h2>Research</h2>
+      <button class="more-button">More</button>
+    </div>
+    <div class="grid-4">
+      <div class="card">
+        <img src="images/research1.png" alt="research1" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
       </div>
-      <div class="more-button">More</div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section projects">
-      <div class="section-title">Projects</div>
-      <div class="section-line"></div>
-      <div class="grid grid-2">
-        <div class="item"><img src="https://placehold.co/670x335"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/670x335"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/670x335"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/670x335"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
+      <div class="card">
+        <img src="images/research2.png" alt="research2" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
       </div>
-      <div class="more-button">More</div>
-    </section>
-
-    <!-- Activities Section -->
-    <section class="section activities">
-      <div class="section-title">Activities</div>
-      <div class="section-line"></div>
-      <div class="grid grid-2">
-        <div class="item"><img src="https://placehold.co/525x552"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/525x552"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/525x552"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
-        <div class="item"><img src="https://placehold.co/525x552"><div class="title">title</div><div class="desc">글을 쓸 수 있는 구역</div></div>
+      <div class="card">
+        <img src="images/research3.png" alt="research3" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
       </div>
-      <div class="more-button">More</div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact">
-      <div class="section-title">Contact</div>
-      <div class="section-line"></div>
-      <div class="contact-content">
-        <img src="https://placehold.co/478x369">
-        <div class="contact-text">
-          <div class="icon">🍅</div>
-          <div>zerah.ox@gmail.com</div>
-          <div><img src="https://placehold.co/59x67"> http://www.linkedin.com/in/zerah-</div>
-          <div><img src="https://placehold.co/64x64"> https://github.com/ZERAH-0</div>
-        </div>
+      <div class="card">
+        <img src="images/research4.png" alt="research4" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-line"></div>
-      <div class="footer-text">THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS. @2023, JURAN KIM, ALL RIGHT RESERVED</div>
-    </footer>
-  </div>
+  <section class="section projects">
+    <div class="section-header">
+      <h2>Projects</h2>
+      <button class="more-button">More</button>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <img src="images/project1.png" alt="project1" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
+      </div>
+      <div class="card">
+        <img src="images/project2.png" alt="project2" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
+      </div>
+      <div class="card">
+        <img src="images/project3.png" alt="project3" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
+      </div>
+      <div class="card">
+        <img src="images/project4.png" alt="project4" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section activities">
+    <div class="section-header">
+      <h2>Activities</h2>
+      <button class="more-button">More</button>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <img src="images/activity1.png" alt="activity1" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
+      </div>
+      <div class="card">
+        <img src="images/activity2.png" alt="activity2" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
+      </div>
+      <div class="card">
+        <img src="images/activity3.png" alt="activity3" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
+      </div>
+      <div class="card">
+        <img src="images/activity4.png" alt="activity4" />
+        <p class="title">title</p>
+        <p>글을 쓸 수 있는 구역</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <div class="section-header">
+      <h2>Contact</h2>
+      <button class="more-button">More</button>
+    </div>
+    <div class="contact-content">
+      <img src="images/about_profile.png" alt="contact" class="contact-img" />
+      <div class="contact-info">
+        <p>🍅 zerah.ox@gmail.com</p>
+        <p>🔗 http://www.linkedin.com/in/zerah-</p>
+        <p>🐙 https://github.com/ZERAH-0</p>
+      </div>
+      <img src="images/mascot.png" alt="mascot" class="mascot" />
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br />
+      @2023, JURAN KIM, ALL RIGHT RESERVED
+    </p>
+  </footer>
 </body>
 </html>
