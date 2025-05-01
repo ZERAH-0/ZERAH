@@ -161,14 +161,20 @@ body {
 
 /* Contact */
 .contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
   position: relative;
 }
+
 .contact-grid {
   display: flex;
   align-items: flex-start;
-  position: relative;
+  justify-content: center; /* 가운데 정렬 핵심 */
+  gap: 80px; /* 이미지와 텍스트 사이 간격 */
   margin-top: 40px;
 }
+
 .contact-image-wrapper {
   position: relative;
   width: 478px;
