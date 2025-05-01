@@ -80,8 +80,11 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: absolute;
+  right: 100px;
+  top: 30px; /* 너무 위로 가지 않도록 값 조정 */
+  z-index: 1;
 }
-
 
 .section-line {
   width: 100%;
@@ -211,8 +214,3 @@ body {
   height: 240px;
 }
 
-.more-button {
-  position: absolute;
-  top: 0;
-  right: 100px; /* content-section 패딩 고려 */
-}
