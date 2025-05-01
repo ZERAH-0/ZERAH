@@ -209,10 +209,11 @@ body {
   width: 298px;
   height: 298px;
   transform: rotate(168deg) scaleX(-1);
-  top: 250px;
-  left: 160px;
+  top: 300px; /* ← 이건 필요에 따라 280~310px 사이로 조정 가능 */
+  left: 200px; /* ← 이 값도 마찬가지로 조정 가능 */
   z-index: 2;
 }
+
 
 .contact-text {
   display: flex;
