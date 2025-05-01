@@ -51,7 +51,8 @@ body {
   right: 20px;
 }
 
-.content-section, .blue-section {
+.content-section,
+.blue-section {
   padding: 60px 100px;
   position: relative;
 }
@@ -140,10 +141,19 @@ body {
 }
 
 .mascot-img {
-  width: 239px;
-  height: 240px;
-  margin-top: 10px;
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 120px;
+  height: auto;
+  z-index: 2;
   border: 1px solid black;
+}
+
+.about-image-container {
+  position: relative;
+  width: 437px;
+  height: 534px;
 }
 
 .research-img {
