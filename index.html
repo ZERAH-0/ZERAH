@@ -1,89 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZERAH Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Changa+One&family=Fugaz+One&family=Carrois+Gothic&family=Lunasima&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=1728">
+  <title>ZERAH</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #FFFEFB; font-family: 'Lunasima', sans-serif; }
+    img { object-fit: cover; display: block; }
+    .section { position: relative; width: 1728px; margin: 0 auto; background: #FFFEFB; overflow: hidden; }
+    .absolute { position: absolute; }
+    .footer { background: black; width: 1776px; height: 122px; position: absolute; left: -31px; }
+    .footer-text {
+      position: absolute;
+      width: 1079.17px; height: 96px; left: 315.57px; top: 6486px;
+      text-align: center;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 25px;
+      font-family: 'Bakbak One';
+    }
+    .nav-bar {
+      position: absolute;
+      width: 1772px; height: 396px; left: -18px; top: 0;
+      background: black;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+    .nav-bar h1 {
+      color: white; font-size: 100px; font-family: 'Fugaz One'; margin-bottom: 20px;
+    }
+    .nav-bar p {
+      color: white; font-size: 40px; font-family: 'Carrois Gothic'; letter-spacing: 3.2px;
+    }
+    .btn-white {
+      border: 5px solid white;
+      width: 156px; height: 72.58px;
+      color: white;
+      background: rgba(217, 217, 217, 0);
+      font-size: 30px;
+      font-family: 'Changa One';
+      display: flex; align-items: center; justify-content: center;
+    }
+    .text-box {
+      font-size: 20px;
+      font-family: 'Lunasima';
+      line-height: 30px;
+      word-wrap: break-word;
+      color: black;
+    }
+    .img-border {
+      border: 1px solid black;
+    }
+    .section-title {
+      font-size: 70px;
+      font-family: 'Bakbak One';
+      color: black;
+    }
+    .more-btn {
+      width: 181px;
+      height: 59px;
+      border: 3px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Changa One';
+      font-size: 30px;
+      color: black;
+      background: transparent;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="nav">
-      <button class="nav-button">Home</button>
-      <h1 class="logo">ZERAH</h1>
-      <button class="nav-button">Menu</button>
+  <div class="section" style="height: 6596px;">
+    <!-- 네비게이션 -->
+    <div class="nav-bar">
+      <h1>ZERAH</h1>
+      <p>“Crafting virtual realities that feel alive.”</p>
     </div>
-    <p class="tagline">“Crafting virtual realities that feel alive.”</p>
-  </header>
 
-  <section class="section about">
-    <div class="section-header">
-      <h2>About</h2>
-      <button class="more-button">More</button>
-    </div>
-    <div class="section-content">
-      <p>글을 쓸 수 있는 구역</p>
-      <img src="images/about_profile.png" alt="About image">
-    </div>
-  </section>
+    <!-- HOME / MENU 버튼 -->
+    <div class="btn-white absolute" style="top: 39px; left: 37px;">Home</div>
+    <div class="btn-white absolute" style="top: 39px; left: 1529px;">Menu</div>
 
-  <section class="section research">
-    <div class="section-header">
-      <h2>Research</h2>
-      <button class="more-button">More</button>
-    </div>
-    <div class="card-grid">
-      <div class="card"><img src="images/research1.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card"><img src="images/research2.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card"><img src="images/research3.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card"><img src="images/research4.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-    </div>
-  </section>
+    <!-- 아래는 너가 준 HTML 콘텐츠를 그대로 위치 맞게 붙여야 함 -->
+    <!-- 대신 모든 <img>에 object-fit: cover 적용됨 -->
 
-  <section class="section projects">
-    <div class="section-header">
-      <h2>Projects</h2>
-      <button class="more-button">More</button>
-    </div>
-    <div class="card-grid">
-      <div class="card wide"><img src="images/project1.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card wide"><img src="images/project2.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card wide"><img src="images/project3.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card wide"><img src="images/project4.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-    </div>
-  </section>
+    <!-- 예시 이미지 (반복 필요) -->
+    <img class="absolute img-border" style="width: 478.38px; height: 368.75px; left: 214.78px; top: 5905.47px;" src="https://placehold.co/478x369" />
 
-  <section class="section activities" style="background-color: #D0DFEC;">
-    <div class="section-header">
-      <h2>Activities</h2>
-      <button class="more-button">More</button>
-    </div>
-    <div class="card-grid">
-      <div class="card"><img src="images/activity1.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card"><img src="images/activity2.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card"><img src="images/activity3.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-      <div class="card"><img src="images/activity4.png"><h3>title</h3><p>글을 쓸 수 있는 구역</p></div>
-    </div>
-  </section>
+    <!-- 예시 타이틀 -->
+    <div class="absolute section-title" style="left: 131.18px; top: 5701.82px;">Contact</div>
 
-  <section class="section contact">
-    <div class="section-header">
-      <h2>Contact</h2>
-      <button class="more-button">More</button>
-    </div>
-    <div class="contact-content">
-      <img src="images/mascot.png" alt="Mascot" />
-      <ul>
-        <li>🍅 zerah.ox@gmail.com</li>
-        <li>🔗 <a href="http://www.linkedin.com/in/zerah-">http://www.linkedin.com/in/zerah-</a></li>
-        <li>🌿 <a href="https://github.com/ZERAH-0">https://github.com/ZERAH-0</a></li>
-      </ul>
-    </div>
-  </section>
+    <!-- 예시 텍스트 박스 -->
+    <div class="absolute text-box" style="left: 826.68px; top: 5951.26px; font-size: 35px; font-weight: 700;">zerah.ox@gmail.com</div>
 
-  <footer class="footer">
-    <p>THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONAL PORTFOLIO.<br/>©2023, JURAN KIM, ALL RIGHT RESERVED</p>
-  </footer>
+    <!-- 구분선 -->
+    <div class="absolute" style="width: 1473.45px; height: 0px; left: 127px; top: 5824px; outline: 3px black solid; outline-offset: -1.5px;"></div>
+
+    <!-- 푸터 -->
+    <div class="footer" style="top: 6474px;"></div>
+    <div class="footer-text">
+      THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br/>
+      @2023, JURAN KIM, ALL RIGHT RESERVED
+    </div>
+  </div>
 </body>
 </html>
