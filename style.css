@@ -1,156 +1,69 @@
-body {
-  margin: 0;
-  font-family: 'Lunasima', sans-serif;
-  background-color: #FFFEFB;
+/* 공통 */
+img {
+  display: block;
+  object-fit: cover;
 }
 
-.header {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 30px 20px 50px;
-  position: relative;
-}
-
-.header h1 {
-  font-family: 'Fugaz One', cursive;
-  font-size: 60px;
-  margin: 0;
-}
-
-.header p {
-  font-family: 'Carrois Gothic', sans-serif;
-  font-size: 20px;
-  margin-top: 10px;
-  letter-spacing: 2px;
-}
-
-.nav-button {
-  position: absolute;
-  top: 30px;
-  padding: 8px 20px;
-  border: 3px solid white;
-  color: white;
-  font-size: 16px;
-  font-family: 'Changa One', cursive;
-}
-
-.nav-button.left {
-  left: 30px;
-}
-
-.nav-button.right {
-  right: 30px;
-}
-
-.content-section {
-  padding: 50px 100px;
-  position: relative;
-}
-
-.blue-section {
-  padding: 50px 100px;
-  background-color: #D0DFEC;
-  position: relative;
-}
-
-.section-title {
-  font-family: 'Bakbak One', cursive;
-  font-size: 30px;
-  color: black;
-  margin-bottom: 10px;
-}
-
-.more-button {
-  position: absolute;
-  right: 100px;
-  top: 50px;
-  border: 2px solid black;
-  background: transparent;
-  font-family: 'Changa One', cursive;
-  font-size: 14px;
-  padding: 5px 15px;
-}
-
-.section-line {
-  height: 2px;
-  background-color: black;
-  margin: 10px 0 40px;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-}
-
-.image-block {
-  text-align: center;
-}
-
-.image-block img {
-  width: 100%;
-  border: 1px solid black;
-}
-
-.image-title {
-  font-weight: 700;
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-.image-desc {
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.contact-info {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  margin-bottom: 15px;
-  font-family: 'Lunasima', sans-serif;
-  font-weight: 700;
-}
-
-.contact-icon {
-  font-size: 24px;
-  margin-right: 10px;
-}
-
-.footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 10px;
-  font-weight: 700;
-  font-family: 'Lunasima', sans-serif;
-  line-height: 18px;
-}
-
-.mascot {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 80px;
-  height: auto;
-}
-
-.profile-img {
+/* About 섹션 이미지 */
+.about-img {
   width: 437px;
   height: 534px;
   border: 1px solid black;
-  margin-top: 10px;
-  position: relative;
-  z-index: 1;
 }
 
-.contact-img {
-  width: 200px;
-  height: auto;
+.about-mascot {
+  width: 239px;
+  height: 240px;
+  position: absolute;
+  left: 1461.5px;
+  top: 978.91px;
+}
+
+/* Research 섹션 이미지 */
+.research-img {
+  width: 297px;
+  height: 404px;
   border: 1px solid black;
-  display: block;
-  margin-bottom: 10px;
+}
+
+/* Projects 섹션 이미지 */
+.project-img {
+  width: 670px;
+  height: 335px;
+  border: 1px solid black;
+}
+
+/* Activities 섹션 이미지 */
+.activity-img {
+  width: 525px;
+  height: 552px;
+  border: 1px solid black;
+}
+
+/* Contact 섹션 이미지 */
+.contact-img {
+  width: 478px;
+  height: 369px;
+  border: 1px solid black;
+}
+
+.contact-mascot {
+  width: 298px;
+  height: 298px;
+  transform: rotate(168deg);
+  position: absolute;
+  top: 6413.84px;
+  left: 380.8px;
+}
+
+/* 기타 아이콘 */
+.icon-mail {
+  width: 59px;
+  height: 67px;
+}
+
+.icon-github {
+  width: 64px;
+  height: 64px;
+  margin-top: 10px;
 }
