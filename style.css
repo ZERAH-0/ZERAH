@@ -201,7 +201,7 @@ body {
 .about-mascot-img {
   position: absolute;
   bottom: -80px; /* 조절 가능 */
-  right: -30px;  /* 조절 가능 */
+  right: -90px;  /* 조절 가능 */
   width: 239px;
   height: 240px;
 }
