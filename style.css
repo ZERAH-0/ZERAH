@@ -1,92 +1,157 @@
-/* 전체 기본 스타일 */
+/* 기본 폰트 및 여백 초기화 */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: #f8f9fa;
-  color: #333;
+  font-family: 'Lunasima', sans-serif;
+  background-color: #FFFEFB;
+  color: black;
 }
 
-/* 상단 네비게이션 */
-.navbar {
-  background: #000;
-  color: #fff;
+/* Header */
+.header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 0 40px;
+}
+
+.nav-button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 18px;
+  padding: 8px 16px;
+  cursor: pointer;
 }
 
 .logo {
+  font-size: 64px;
+  font-family: 'Fugaz One', sans-serif;
+  margin: 0;
+}
+
+.tagline {
+  font-family: 'Carrois Gothic', sans-serif;
   font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-buttons .btn {
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 8px 16px;
-  margin-left: 10px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.nav-buttons .btn:hover {
-  background: white;
-  color: black;
-}
-
-/* 메인 컨텐츠 */
-.main-content {
-  text-align: center;
-  margin-top: 100px;
-}
-
-.main-content h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.main-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.enter-btn {
-  display: inline-block;
-  background: black;
-  color: white;
-  padding: 10px 20px;
-  margin-bottom: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.enter-btn:hover {
-  background: white;
-  color: black;
-  border: 1px solid black;
-}
-
-/* 마스코트 이미지 */
-.mascot-img {
-  width: 200px;
+  letter-spacing: 2px;
   margin-top: 20px;
 }
 
-/* 하단 푸터 */
-footer {
-  background: #eeeeee;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 50px;
+/* Section 공통 */
+.section {
+  padding: 80px 100px;
 }
 
-/* 서브페이지 스타일 */
-.sub-page {
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-family: 'Bakbak One';
+  font-size: 36px;
+  margin: 0;
+}
+
+.more-button {
+  border: 1px solid black;
+  padding: 4px 12px;
+  background: none;
+  cursor: pointer;
+  font-family: 'Changa One';
+  font-size: 16px;
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.section-content p {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section-content img {
+  max-width: 400px;
+  height: auto;
+  border: 1px solid black;
+}
+
+/* 카드 레이아웃 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card {
   text-align: center;
-  margin-top: 100px;
+}
+
+.card img {
+  width: 100%;
+  border: 1px solid black;
+  background: #eee;
+}
+
+.card h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.card.wide img {
+  height: auto;
+  max-height: 300px;
+}
+
+/* Contact */
+.contact-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-content ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.contact-content li {
+  margin-bottom: 12px;
+}
+
+.contact-content a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Bakbak One';
+  font-size: 14px;
+  line-height: 1.6;
 }
