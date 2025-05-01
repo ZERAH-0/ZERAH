@@ -1,136 +1,198 @@
+/* 기본 설정 */
 body {
   margin: 0;
+  padding: 0;
   background-color: #FFFEFB;
   font-family: 'Lunasima', sans-serif;
 }
 
-.container {
+section {
+  padding: 80px 100px;
   position: relative;
-  width: 1728px;
-  height: 6596px;
-  overflow: hidden;
-  margin: 0 auto;
 }
 
-.section {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.header,
-.footer {
-  width: 1776px;
-  height: 122px;
-  background: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  font-family: 'Bakbak One', sans-serif;
-}
-
-h1.section-title {
-  font-size: 70px;
-  font-family: 'Bakbak One', sans-serif;
-  color: black;
-}
-
-h2 {
-  font-size: 30px;
-  font-family: 'Changa One', sans-serif;
-  font-weight: 400;
-  color: white;
-}
-
-p {
-  font-size: 20px;
-  line-height: 30px;
-  color: black;
-}
-
-img {
-  border: 1px solid black;
-  object-fit: cover;
-}
-
-.outline-line {
-  border-top: 3px solid black;
-  width: 1473.45px;
-  margin: 20px auto;
-}
-
-.menu-button, .home-button {
-  width: 156px;
-  height: 72.58px;
-  background: transparent;
-  border: 5px solid white;
-  color: white;
-  font-family: 'Changa One', sans-serif;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title-box {
-  background: #2B7E50;
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 55px;
-  border: 1px solid black;
-  width: 100%;
-}
-
-.project-title-box {
-  background: #BA4009;
-}
-
-.activity-title-box {
-  background: #165F97;
-}
-
-.contact-info {
-  font-size: 35px;
-  font-weight: 700;
-  color: black;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.quote {
-  color: white;
+/* 공통 */
+.title-section {
   font-size: 40px;
-  letter-spacing: 3.2px;
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: 'Bakbak One', cursive;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.logo-title {
-  font-family: 'Fugaz One', sans-serif;
-  font-size: 100px;
-  color: white;
-  text-align: center;
+.section-divider {
+  height: 3px;
+  background-color: black;
+  margin-bottom: 40px;
 }
 
 .more-button {
-  width: 181px;
-  height: 60px;
-  border: 3px solid black;
-  font-size: 30px;
-  color: black;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  font-size: 20px;
   font-family: 'Changa One', sans-serif;
+  border: 3px solid black;
+  padding: 5px 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* 헤더 */
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px 0 20px;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 60px;
+  font-family: 'Fugaz One', sans-serif;
+  margin: 0;
+}
+
+.header p {
+  font-size: 20px;
+  font-family: 'Carrois Gothic', sans-serif;
+  letter-spacing: 2px;
+}
+
+.nav-button {
+  position: absolute;
+  top: 20px;
+  font-family: 'Changa One';
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+  right: 20px;
+}
+
+/* About */
+.about-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-text {
+  width: 60%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about-image-wrapper {
+  width: 35%;
+  position: relative;
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.about-mascot {
+  position: absolute;
+  bottom: -60px;
+  right: -40px;
+  width: 120px;
+}
+
+/* Research, Projects, Activities */
+.grid-4 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.grid-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  width: calc(25% - 30px);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.card .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card .desc {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.section-bg {
+  background-color: #D0DFEC;
+}
+
+/* Contact */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.contact-left img {
+  width: 300px;
+  border: 1px solid black;
+}
+
+.contact-info {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.contact-line {
+  display: flex;
   align-items: center;
 }
 
-.research-bg,
-.activity-bg {
-  background-color: #D0DFEC;
+.contact-mascot {
+  margin-top: 40px;
+  width: 100px;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+  font-family: 'Bakbak One';
+  line-height: 1.6;
 }
