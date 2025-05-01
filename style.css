@@ -211,3 +211,8 @@ body {
   height: 240px;
 }
 
+.more-button {
+  position: absolute;
+  top: 0;
+  right: 100px; /* content-section 패딩 고려 */
+}
