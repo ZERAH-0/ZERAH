@@ -82,7 +82,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 100px;
-  top: 70px;
+  top: 70px; /* 위치 수정 */
   z-index: 1;
 }
 
@@ -102,15 +102,12 @@ body {
 
 .image-block {
   text-align: center;
-  flex: 1 1 300px;
 }
 
 .image-block img {
   border: 1px solid black;
   display: block;
   margin: 0 auto;
-  width: 100%;
-  height: auto;
 }
 
 .image-title {
@@ -134,23 +131,22 @@ body {
 }
 
 /* 이미지 별 클래스 */
-.about-img,
-.research-img,
-.project-img,
-.activity-img,
-.contact-img {
-  width: 100%;
-  height: auto;
+.about-img {
+  width: 437px;
+  height: 534px;
   border: 1px solid black;
-  max-width: 100%;
 }
 
-.about-image-wrapper,
-.contact-image-wrapper {
+.about-image-wrapper {
   position: relative;
+  width: 437px;
+  height: 534px;
+}
+
+.about-img {
   width: 100%;
-  max-width: 437px;
-  height: auto;
+  height: 100%;
+  border: 1px solid black;
 }
 
 .about-mascot-img {
@@ -159,6 +155,24 @@ body {
   right: -90px;
   width: 239px;
   height: 240px;
+}
+
+.research-img {
+  width: 297px;
+  height: 404px;
+  border: 1px solid black;
+}
+
+.project-img {
+  width: 670px;
+  height: 335px;
+  border: 1px solid black;
+}
+
+.activity-img {
+  width: 525px;
+  height: 552px;
+  border: 1px solid black;
 }
 
 .contact-container {
@@ -173,10 +187,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
+  gap: 80px;
   margin-top: 80px;
   position: relative;
+}
+
+.contact-image-wrapper {
+  position: relative;
+  width: 478px;
+  height: 368px;
+}
+
+.contact-img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
 }
 
 .contact-mascot-img {
@@ -189,6 +214,7 @@ body {
   transform: rotate(168deg) scaleY(-1);
 }
 
+
 .contact-text {
   display: flex;
   flex-direction: column;
@@ -197,7 +223,6 @@ body {
   font-family: 'Lunasima', sans-serif;
   font-weight: 700;
   font-size: 35px;
-  max-width: 100%;
 }
 
 .contact-line {
@@ -210,19 +235,14 @@ body {
   font-size: 50px;
 }
 
-/* 반응형 */
+
+
+
+/*반응형*/
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
     padding: 0 16px;
-  }
-
-  .header h1 {
-    font-size: 40px;
-  }
-
-  .header p {
-    font-size: 14px;
   }
 
   .content-section,
@@ -247,9 +267,15 @@ body {
     gap: 20px;
   }
 
+  .image-block img {
+    width: 100%;
+    height: auto;
+  }
+
   .about-image-wrapper,
   .contact-image-wrapper {
     width: 100%;
+    height: auto;
   }
 
   .about-img,
