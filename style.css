@@ -209,7 +209,7 @@ body {
   width: 298px;
   height: 298px;
   top: 250px;
-  left: -50px;
+  left: -160px;
   z-index: 2;
   transform: rotate(168deg) scaleY(-1);
 }
