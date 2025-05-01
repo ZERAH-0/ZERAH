@@ -1,198 +1,152 @@
-/* 기본 설정 */
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFEFB;
   font-family: 'Lunasima', sans-serif;
+  background-color: #FFFEFB;
+  color: black;
 }
 
-section {
-  padding: 80px 100px;
-  position: relative;
-}
-
-/* 공통 */
-.title-section {
-  font-size: 40px;
-  font-family: 'Bakbak One', cursive;
+.section-title {
+  font-family: 'Bakbak One', sans-serif;
+  font-size: 70px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin: 60px 130px 30px;
 }
 
-.section-divider {
+.section-line {
+  width: calc(100% - 260px);
   height: 3px;
-  background-color: black;
-  margin-bottom: 40px;
+  background: black;
+  margin: 0 auto 30px auto;
 }
 
 .more-button {
-  position: absolute;
-  top: 80px;
-  right: 100px;
-  font-size: 20px;
+  float: right;
+  margin-right: 130px;
+  margin-top: -60px;
+  padding: 10px 20px;
   font-family: 'Changa One', sans-serif;
+  font-size: 30px;
   border: 3px solid black;
-  padding: 5px 20px;
   background-color: transparent;
   cursor: pointer;
 }
 
-/* 헤더 */
 .header {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 40px 0 20px;
-  position: relative;
+  padding: 30px 0 20px;
 }
 
 .header h1 {
-  font-size: 60px;
   font-family: 'Fugaz One', sans-serif;
+  font-size: 100px;
   margin: 0;
 }
 
 .header p {
-  font-size: 20px;
   font-family: 'Carrois Gothic', sans-serif;
-  letter-spacing: 2px;
+  font-size: 40px;
+  letter-spacing: 3.2px;
+  margin-top: 20px;
 }
 
 .nav-button {
   position: absolute;
-  top: 20px;
-  font-family: 'Changa One';
-  font-size: 20px;
-  padding: 10px 20px;
-  border: 3px solid white;
-  background-color: transparent;
+  top: 39px;
+  width: 156px;
+  height: 72px;
+  border: 5px solid white;
   color: white;
-  cursor: pointer;
+  font-family: 'Changa One', sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
 .nav-button.left {
-  left: 20px;
+  left: 37px;
 }
 
 .nav-button.right {
-  right: 20px;
+  right: 37px;
 }
 
-/* About */
-.about-section {
+.content-section {
+  margin: 60px 130px;
+}
+
+.image-grid {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.about-text {
-  width: 60%;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.about-image-wrapper {
-  width: 35%;
-  position: relative;
-}
-
-.about-image-wrapper img {
-  width: 100%;
-  border: 1px solid black;
-}
-
-.about-mascot {
-  position: absolute;
-  bottom: -60px;
-  right: -40px;
-  width: 120px;
-}
-
-/* Research, Projects, Activities */
-.grid-4 {
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
-}
-
-.grid-2 {
-  display: flex;
+  gap: 30px;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
 }
 
-.card {
-  width: calc(25% - 30px);
+.image-block {
+  width: calc(50% - 15px);
   text-align: center;
 }
 
-.card img {
+.image-block img {
   width: 100%;
+  height: auto;
   border: 1px solid black;
 }
 
-.card .title {
-  font-weight: bold;
-  font-size: 18px;
+.image-title {
+  font-weight: 700;
+  font-size: 20px;
   margin-top: 10px;
 }
 
-.card .desc {
-  font-size: 16px;
+.image-desc {
+  font-size: 20px;
   margin-top: 5px;
 }
 
-.section-bg {
+.blue-section {
   background-color: #D0DFEC;
-}
-
-/* Contact */
-.contact-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 60px;
-}
-
-.contact-left img {
-  width: 300px;
-  border: 1px solid black;
+  padding: 60px 130px;
 }
 
 .contact-info {
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact-info img {
-  width: 30px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.contact-line {
   display: flex;
   align-items: center;
+  gap: 20px;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
-.contact-mascot {
-  margin-top: 40px;
-  width: 100px;
+.contact-icon {
+  font-size: 50px;
+  width: 60px;
+  text-align: center;
 }
 
-/* Footer */
-footer {
+.footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 30px 0;
-  font-size: 14px;
-  font-family: 'Bakbak One';
-  line-height: 1.6;
+  padding: 30px 20px;
+  font-family: 'Bakbak One', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 100px;
+}
+
+.contact-images {
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.contact-images img {
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
 }
