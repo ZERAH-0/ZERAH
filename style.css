@@ -208,7 +208,7 @@ body {
   position: absolute;
   width: 298px;
   height: 298px;
-  top: 500px;
+  top: 150px;
   left: -160px;
   z-index: 2;
   transform: rotate(168deg) scaleY(-1);
