@@ -187,5 +187,21 @@
     THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br />
     ©2023, JURAN KIM, ALL RIGHT RESERVED
   </div>
+  <script>
+  const menuBtn = document.querySelector('.nav-button.right');
+  const backBtn = document.querySelector('.menu-back-button');
+  const menuOverlay = document.querySelector('.menu-overlay');
+
+  menuBtn.addEventListener('click', () => {
+    menuOverlay.classList.add('active');
+  });
+
+  backBtn.addEventListener('click', () => {
+    menuOverlay.classList.remove('active');
+  });
+</script>
+</body>
+</html>
+
 </body>
 </html>
