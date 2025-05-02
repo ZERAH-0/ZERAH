@@ -320,7 +320,6 @@ body {
 }
 */
 
-
 /* 메뉴 오버레이 */
 .menu-overlay {
   position: fixed;
@@ -334,24 +333,26 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
+  overflow-y: auto;
 }
 
 .menu-overlay.active {
   display: flex;
 }
 
-.menu-header {
+.menu-container {
+  width: 100%;
+}
+
+.menu-title {
   width: 100%;
   background-color: #FFFEFB;
   text-align: center;
-  padding: 40px 0;
-  position: relative;
-}
-
-.menu-header h2 {
   font-family: 'Fugaz One', sans-serif;
   font-size: 100px;
   color: black;
+  padding: 40px 0;
+  position: relative;
 }
 
 .menu-back-button {
@@ -366,7 +367,7 @@ body {
   cursor: pointer;
 }
 
-.menu-list {
+.menu-links {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -374,7 +375,7 @@ body {
   align-items: center;
 }
 
-.menu-list a {
+.menu-links a {
   font-family: 'Bakbak One', sans-serif;
   font-size: 100px;
   color: white;
@@ -383,7 +384,6 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.menu-list a:hover {
+.menu-links a:hover {
   opacity: 0.6;
 }
-
