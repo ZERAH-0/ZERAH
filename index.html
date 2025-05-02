@@ -182,26 +182,39 @@
 
 
 
-
   <div class="footer">
     THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br />
     ©2023, JURAN KIM, ALL RIGHT RESERVED
   </div>
+
+  <!-- 메뉴 오버레이 -->
+  <div class="menu-overlay">
+    <div class="menu-container">
+      <div class="menu-back-button">Back</div>
+      <h2 class="menu-title">MENU</h2>
+      <nav class="menu-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 메뉴 열고 닫기 스크립트 -->
   <script>
-  const menuBtn = document.querySelector('.nav-button.right');
-  const backBtn = document.querySelector('.menu-back-button');
-  const menuOverlay = document.querySelector('.menu-overlay');
+    const menuBtn = document.querySelector('.nav-button.right');
+    const backBtn = document.querySelector('.menu-back-button');
+    const menuOverlay = document.querySelector('.menu-overlay');
 
-  menuBtn.addEventListener('click', () => {
-    menuOverlay.classList.add('active');
-  });
+    menuBtn.addEventListener('click', () => {
+      menuOverlay.classList.add('active');
+    });
 
-  backBtn.addEventListener('click', () => {
-    menuOverlay.classList.remove('active');
-  });
-</script>
-</body>
-</html>
-
+    backBtn.addEventListener('click', () => {
+      menuOverlay.classList.remove('active');
+    });
+  </script>
 </body>
 </html>
