@@ -82,7 +82,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 100px;
-  top: 70px;
+  top: 70px; /* 위치 수정 */
   z-index: 1;
 }
 
@@ -102,13 +102,9 @@ body {
 
 .image-block {
   text-align: center;
-  flex: 1 1 calc(25% - 40px);
-  max-width: calc(25% - 40px);
 }
 
 .image-block img {
-  width: 100%;
-  height: auto;
   border: 1px solid black;
   display: block;
   margin: 0 auto;
@@ -136,16 +132,21 @@ body {
 
 /* 이미지 별 클래스 */
 .about-img {
-  width: 100%;
-  height: auto;
+  width: 437px;
+  height: 534px;
   border: 1px solid black;
 }
 
 .about-image-wrapper {
   position: relative;
+  width: 437px;
+  height: 534px;
+}
+
+.about-img {
   width: 100%;
-  max-width: 437px;
-  margin: 0 auto;
+  height: 100%;
+  border: 1px solid black;
 }
 
 .about-mascot-img {
@@ -156,11 +157,21 @@ body {
   height: 240px;
 }
 
-.research-img,
-.project-img,
+.research-img {
+  width: 297px;
+  height: 404px;
+  border: 1px solid black;
+}
+
+.project-img {
+  width: 670px;
+  height: 335px;
+  border: 1px solid black;
+}
+
 .activity-img {
-  width: 100%;
-  height: auto;
+  width: 525px;
+  height: 552px;
   border: 1px solid black;
 }
 
@@ -174,7 +185,6 @@ body {
 
 .contact-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 80px;
@@ -184,13 +194,13 @@ body {
 
 .contact-image-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 478px;
+  width: 478px;
+  height: 368px;
 }
 
 .contact-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border: 1px solid black;
 }
 
@@ -203,6 +213,7 @@ body {
   z-index: 2;
   transform: rotate(168deg) scaleY(-1);
 }
+
 
 .contact-text {
   display: flex;
@@ -224,14 +235,10 @@ body {
   font-size: 50px;
 }
 
-/* 반응형 */
-@media screen and (max-width: 1024px) {
-  .image-block {
-    flex: 1 1 calc(50% - 40px);
-    max-width: calc(50% - 40px);
-  }
-}
 
+
+
+/*반응형
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
@@ -260,9 +267,9 @@ body {
     gap: 20px;
   }
 
-  .image-block {
-    flex: 1 1 100%;
-    max-width: 100%;
+  .image-block img {
+    width: 100%;
+    height: auto;
   }
 
   .about-image-wrapper,
@@ -302,8 +309,13 @@ body {
     font-size: 24px;
   }
 
+  .contact-info-text {
+    font-size: 16px;
+  }
+
   .footer {
     font-size: 8px;
     padding: 10px;
   }
 }
+*/
