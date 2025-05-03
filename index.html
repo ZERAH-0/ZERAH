@@ -17,33 +17,34 @@
     <p>“Crafting virtual realities that feel alive.”</p>
   </div>
 
-  <!-- 메뉴 오버레이 -->
-  <div id="menuOverlay" class="menu-overlay">
-    <div class="menu-header">
-      <button class="back-button" onclick="closeMenu()">Back</button>
-      <h2 class="menu-title">MENU</h2>
-    </div>
-    <ul class="menu-list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#activities">Activities</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+ <!-- 메뉴 오버레이 -->
+<div class="menu-overlay">
+  <div class="menu-container">
+    <div class="menu-back-button">Back</div>
+    <div class="menu-title">MENU</div>
   </div>
+  <nav class="menu-links">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
 
-  <script>
-    const menuOverlay = document.getElementById('menuOverlay');
-    const menuBtn = document.querySelector('.nav-button.right');
+<script>
+  const menuBtn = document.querySelector('.nav-button.right');
+  const backBtn = document.querySelector('.menu-back-button');
+  const menuOverlay = document.querySelector('.menu-overlay');
 
-    menuBtn.addEventListener('click', () => {
-      menuOverlay.classList.add('active');
-    });
+  menuBtn.addEventListener('click', () => {
+    menuOverlay.classList.add('active');
+  });
 
-    function closeMenu() {
-      menuOverlay.classList.remove('active');
-    }
-  </script>
+  backBtn.addEventListener('click', () => {
+    menuOverlay.classList.remove('active');
+  });
+</script>
 
 
 <section class="content-section">
