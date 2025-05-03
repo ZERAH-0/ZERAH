@@ -383,6 +383,7 @@ body {
   flex-direction: column;
   gap: 80px;
   align-items: center;
+  padding-bottom: 150px;
 }
 
 .menu-links a {
