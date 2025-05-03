@@ -33,23 +33,29 @@ body {
 
 .nav-button {
   position: absolute;
-  top: 20px;
-  width: 80px;
+  top: 39px;
+  width: 156px;
+  height: 72.58px;
   padding: 10px;
   text-align: center;
-  border: 2px solid white;
+  border: 5px solid white;
   font-family: 'Changa One', sans-serif;
-  font-size: 14px;
+  font-size: 30px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
 .nav-button.left {
-  left: 20px;
+  left: 55px;
 }
 
 .nav-button.right {
-  right: 20px;
+  right: 55px;
 }
+
 
 .content-section,
 .blue-section {
