@@ -2,63 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=1728, initial-scale=1.0" />
   <title>About - ZERAH</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Carrois+Gothic&family=Changa+One&family=Fugaz+One&family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Carrois+Gothic&family=Changa+One&family=Fugaz+One&family=Lunasima&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #FFFEFB;
+      font-family: 'Lunasima', sans-serif;
+      overflow-x: hidden;
+    }
+    .absolute {
+      position: absolute;
+    }
+    .header, .footer {
+      background: black;
+    }
+    .white-text {
+      color: white;
+    }
+    .section-title {
+      font-size: 70px;
+      font-family: 'Bakbak One';
+      color: black;
+    }
+    .quote {
+      font-family: 'Carrois Gothic';
+      font-size: 40px;
+      letter-spacing: 2px;
+      color: black;
+      text-align: center;
+    }
+    .description {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .bordered-img {
+      border: 1px solid black;
+    }
+    .button-white {
+      border: 5px solid white;
+      background: transparent;
+      color: white;
+      font-family: 'Changa One';
+      font-size: 30px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .button-black {
+      border: 5px solid black;
+      background: transparent;
+      color: black;
+      font-family: 'Changa One';
+      font-size: 35px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
-<body style="margin: 0; background: #FFFEFB; font-family: 'Lunasima', sans-serif;">
-  <!-- Header 영역 -->
-  <div style="position: relative; width: 100%; height: 396px; background: black;">
-    <div style="position: absolute; left: 37px; top: 39px; width: 156px; height: 72.58px; border: 5px white solid;"></div>
-    <div style="position: absolute; left: 37px; top: 39px; width: 156px; height: 70.03px; color: white; font-size: 30px; font-family: 'Changa One'; display: flex; align-items: center; justify-content: center;">Home</div>
+<body>
+  <div style="width: 1728px; height: 3053px; position: relative;">
+    <div class="absolute header" style="width: 1772px; height: 396px; left: -18px; top: 0px;"></div>
+    <div class="absolute white-text" style="width: 602px; height: 145px; left: 577px; top: 91px; font-family: 'Fugaz One'; font-size: 100px; display: flex; justify-content: center; align-items: center;">ZERAH</div>
+    <div class="absolute button-white" style="width: 156px; height: 70px; left: 37px; top: 39px;">Home</div>
+    <div class="absolute button-white" style="width: 156px; height: 70px; left: 1529px; top: 39px;">Menu</div>
+    <div class="absolute white-text quote" style="width: 989px; height: 68px; left: 371px; top: 241px;">“Crafting virtual realities that feel alive.”</div>
+    <div class="absolute section-title" style="width: 256px; height: 82px; left: 146px; top: 489px; display: flex; align-items: center;">About</div>
+    <div class="absolute" style="width: 1473px; height: 0px; left: 143px; top: 595px; outline: 3px solid black;"></div>
 
-    <div style="position: absolute; left: 1529px; top: 39px; width: 156px; height: 72.58px; border: 5px white solid;"></div>
-    <div style="position: absolute; left: 1529px; top: 39px; width: 156px; height: 70.03px; color: white; font-size: 30px; font-family: 'Changa One'; display: flex; align-items: center; justify-content: center;">Menu</div>
+    <div class="absolute description" style="width: 1419px; height: 788px; left: 217px; top: 619px; display: flex; align-items: center;">글을 쓸 수 있는 구역 ...</div>
+    <div class="absolute quote" style="width: 993px; height: 77px; left: 412px; top: 1407px;">“Burn bright. Rest easy. Live happy.”</div>
 
-    <div style="position: absolute; left: 577px; top: 90.52px; width: 602px; height: 145.16px; color: white; font-size: 100px; font-family: 'Fugaz One'; text-align: center; display: flex; align-items: center; justify-content: center;">ZERAH</div>
-    <div style="position: absolute; left: 371px; top: 241px; width: 989px; font-size: 40px; font-family: 'Carrois Gothic'; color: white; text-align: center; letter-spacing: 3.2px;">“Crafting virtual realities that feel alive.”</div>
-  </div>
+    <img class="absolute bordered-img" style="width: 504px; height: 650px; left: 216px; top: 1551px;" src="images/about_img_01.png" alt="About main" />
+    <div class="absolute description" style="width: 866px; height: 733px; left: 770px; top: 1529px; display: flex; align-items: center;">글을 쓸 수 있는 구역 2 ...</div>
+    <img class="absolute" style="width: 336px; height: 336px; left: 428px; top: 2286px; transform: rotate(-180deg);" src="images/about_img_02.png" alt="Decorative" />
+    <div class="absolute description" style="width: 1419px; height: 605px; left: 230px; top: 2284px; display: flex; align-items: center;">글을 쓸 수 있는 구역 3 ...</div>
 
-  <!-- About Section Title -->
-  <div style="position: relative;">
-    <div style="position: absolute; left: 146.48px; top: 489px; font-size: 70px; font-family: 'Bakbak One';">About</div>
-    <div style="position: absolute; left: 143px; top: 595px; width: 1473.45px; border-top: 3px solid black;"></div>
-  </div>
-
-  <!-- 슬로건 -->
-  <div style="position: absolute; top: 1407px; left: 412.48px; width: 993px; font-size: 40px; font-family: 'Carrois Gothic'; text-align: center; letter-spacing: 2px;">“Burn bright. Rest easy. Live happy.”</div>
-
-  <!-- Content Blocks -->
-  <div style="position: absolute; top: 619px; left: 217px; width: 1419px; height: 788px; font-size: 25px; line-height: 30px; display: flex; align-items: center;">
-    <div>
-      글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역
+    <div class="absolute footer" style="width: 1776px; height: 122px; left: -24px; top: 2931px;"></div>
+    <div class="absolute white-text" style="width: 1079px; height: 96px; left: 323px; top: 2943px; font-size: 25px; font-family: 'Bakbak One'; line-height: 30px; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+      THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br/>@2023, JURAN KIM, ALL RIGHT RESERVED
     </div>
-  </div>
-  <div style="position: absolute; top: 1529px; left: 770px; width: 866px; height: 733px; font-size: 25px; line-height: 30px; display: flex; align-items: center;">
-    <div>
-      글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2
-    </div>
-  </div>
-  <div style="position: absolute; top: 1551px; left: 216.48px;">
-    <img src="https://placehold.co/504x650" style="width: 504px; height: 650px; border: 1px solid black;">
-  </div>
-
-  <div style="position: absolute; top: 2286.11px; left: 427.84px; transform: rotate(-180deg);">
-    <img src="https://placehold.co/336x336" style="width: 336px; height: 336px;">
-  </div>
-
-  <div style="position: absolute; top: 2284px; left: 230px; width: 1419px; height: 605px; font-size: 25px; line-height: 30px; display: flex; align-items: center;">
-    <div>
-      글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <div style="position: absolute; top: 2931px; left: 0px; width: 100%; height: 122px; background: black;"></div>
-  <div style="position: absolute; top: 2943px; left: 322.57px; width: 1079px; color: white; font-size: 25px; font-family: 'Bakbak One'; text-align: center;">
-    THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONAL PORTFOLIOS.<br/>
-    ©2023, JURAN KIM, ALL RIGHT RESERVED
   </div>
 </body>
 </html>
