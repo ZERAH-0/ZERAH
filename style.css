@@ -404,3 +404,39 @@ body {
   opacity: 0.6;
 }
 
+
+
+/* ABOUT */
+.about-flex {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.about-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 0 0 auto;
+}
+
+.about-img {
+  width: 500px;
+  height: auto;
+  border: 1px solid black;
+}
+
+.about-mascot-img {
+  width: 330px;
+  transform: rotate(-180deg);
+}
+
+.about-text {
+  flex: 1;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
