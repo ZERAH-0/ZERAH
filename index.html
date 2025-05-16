@@ -17,34 +17,35 @@
     <p>“Crafting virtual realities that feel alive.”</p>
   </div>
 
- <!-- 메뉴 오버레이 -->
-<div class="menu-overlay">
-  <div class="menu-container">
-    <div class="menu-back-button">Back</div>
-    <div class="menu-title">MENU</div>
+  <!-- 메뉴 오버레이 -->
+  <div class="menu-overlay">
+    <div class="menu-container">
+      <div class="menu-back-button">Back</div>
+      <h2 class="menu-title">MENU</h2>
+      <nav class="menu-links">
+        <a href="about.html">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </div>
-  <nav class="menu-links">
-   <a href="about.html">About</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#activities">Activities</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</div>
 
-<script>
-  const menuBtn = document.querySelector('.nav-button.right');
-  const backBtn = document.querySelector('.menu-back-button');
-  const menuOverlay = document.querySelector('.menu-overlay');
+  <!-- 메뉴 열고 닫기 스크립트 -->
+  <script>
+    const menuBtn = document.querySelector('.nav-button.right');
+    const backBtn = document.querySelector('.menu-back-button');
+    const menuOverlay = document.querySelector('.menu-overlay');
 
-  menuBtn.addEventListener('click', () => {
-    menuOverlay.classList.add('active');
-  });
+    menuBtn.addEventListener('click', () => {
+      menuOverlay.classList.add('active');
+    });
 
-  backBtn.addEventListener('click', () => {
-    menuOverlay.classList.remove('active');
-  });
-</script>
+    backBtn.addEventListener('click', () => {
+      menuOverlay.classList.remove('active');
+    });
+  </script>
 
 
 <section class="content-section">
@@ -188,34 +189,6 @@
     ©2023, JURAN KIM, ALL RIGHT RESERVED
   </div>
 
-  <!-- 메뉴 오버레이 -->
-  <div class="menu-overlay">
-    <div class="menu-container">
-      <div class="menu-back-button">Back</div>
-      <h2 class="menu-title">MENU</h2>
-      <nav class="menu-links">
-        <a href="about.html">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#activities">Activities</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </div>
 
-  <!-- 메뉴 열고 닫기 스크립트 -->
-  <script>
-    const menuBtn = document.querySelector('.nav-button.right');
-    const backBtn = document.querySelector('.menu-back-button');
-    const menuOverlay = document.querySelector('.menu-overlay');
-
-    menuBtn.addEventListener('click', () => {
-      menuOverlay.classList.add('active');
-    });
-
-    backBtn.addEventListener('click', () => {
-      menuOverlay.classList.remove('active');
-    });
-  </script>
 </body>
 </html>
