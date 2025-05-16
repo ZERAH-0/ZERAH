@@ -6,8 +6,17 @@
   <title>About - ZERAH</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Bakbak+One&family=Changa+One&family=Lunasima:wght@400;700&family=Carrois+Gothic&display=swap" rel="stylesheet">
+
 </head>
 <body>
+  <div style="width: 1728px; height: 3053px; position: relative; background: #FFFEFB; overflow: hidden">
+     <!-- 헤더 -->
+  <div class="header">
+    <div class="nav-button left" onclick="location.href='index.html'">Home</div>
+    <div class="nav-button right">Menu</div>
+    <h1>ZERAH</h1>
+    <p>“Crafting virtual realities that feel alive.”</p>
+  </div>
   <div style="width: 1728px; min-height: 3053px; position: relative; background: #FFFEFB; overflow: hidden">
     <!-- 헤더 -->
     <div class="header">
@@ -17,6 +26,18 @@
       <p>“Crafting virtual realities that feel alive.”</p>
     </div>
 
+  <!-- 메뉴 오버레이 -->
+  <div class="menu-overlay">
+    <div class="menu-container">
+      <div class="menu-back-button">Back</div>
+      <h2 class="menu-title">MENU</h2>
+      <nav class="menu-links">
+        <a href="about.html">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
     <!-- 메뉴 오버레이 -->
     <div class="menu-overlay">
       <div class="menu-container">
@@ -31,40 +52,95 @@
         </nav>
       </div>
     </div>
+  </div>
 
+  <!-- 메뉴 열고 닫기 스크립트 -->
+  <script>
+    const menuBtn = document.querySelector('.nav-button.right');
+    const backBtn = document.querySelector('.menu-back-button');
+    const menuOverlay = document.querySelector('.menu-overlay');
     <!-- 메뉴 열고 닫기 스크립트 -->
     <script>
       const menuBtn = document.querySelector('.nav-button.right');
       const backBtn = document.querySelector('.menu-back-button');
       const menuOverlay = document.querySelector('.menu-overlay');
 
+    menuBtn.addEventListener('click', () => {
+      menuOverlay.classList.add('active');
+    });
       menuBtn.addEventListener('click', () => {
         menuOverlay.classList.add('active');
       });
 
+    backBtn.addEventListener('click', () => {
+      menuOverlay.classList.remove('active');
+    });
+  </script>
       backBtn.addEventListener('click', () => {
         menuOverlay.classList.remove('active');
       });
     </script>
 
+<section class="content-section">
+    <!-- About 섹션 타이틀 -->
+    <div style="width: 256.61px; height: 81.94px; left: 132px; top: 455px; position: absolute; display: flex; align-items: center; font-size: 70px; font-family: 'Bakbak One'; color: black;">About</div>
+    <div style="width: 1473.45px; height: 0px; left: 128px; top: 561px; position: absolute; border-top: 3px solid black;"></div>
     <!-- 본문 내용 -->
     <section class="content-section">
       <div style="width: 256.61px; height: 81.94px; left: 132px; top: 455px; position: absolute; display: flex; align-items: center; font-size: 70px; font-family: 'Bakbak One'; color: black;">About</div>
       <div style="width: 1473.45px; height: 0px; left: 128px; top: 561px; position: absolute; border-top: 3px solid black;"></div>
 
-      <div style="width: 1419px; height: 788px; left: 217px; top: 619px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">글을 쓸 수 있는 구역 ...</div>
+    <!-- 본문 첫 블록 -->
+    <div style="width: 1419px; height: 788px; left: 217px; top: 619px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">
+      글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역  글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있
+    </div>
+      <div style="width: 1419px; height: 788px; left: 217px; top: 619px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">
+        글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역 글을 쓸 수 있는 구역
+      </div>
+
+      <div style="width: 993px; height: 77px; left: 412px; top: 1407px; position: absolute; display: flex; align-items: center; justify-content: center; font-size: 40px; font-family: 'Carrois Gothic'; color: black; letter-spacing: 2px;">
+        “Burn bright. Rest easy. Live happy.”
+      </div>
+
+    
+    <!-- 이미지 두 개 -->
+    <img style="width: 504px; height: 650px; left: 216px; top: 1551px; position: absolute; border: 1px solid black;" src="images/about_profile.png" />
+    <img style="width: 335.85px; height: 336.50px; left: 427.84px; top: 2286px; position: absolute; transform: rotate(-180deg); transform-origin: top left;" src="images/mascot.png" />
       <img style="width: 504px; height: 650px; left: 216px; top: 1551px; position: absolute; border: 1px solid black;" src="images/about_profile.png" />
       <img style="width: 335.85px; height: 336.50px; left: 427.84px; top: 2286px; position: absolute; transform: rotate(-180deg); transform-origin: top left;" src="images/mascot.png" />
-      <div style="width: 866px; height: 733px; left: 770px; top: 1529px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">글을 쓸 수 있는 구역 2 ...</div>
-      <div style="width: 993px; height: 77px; left: 412px; top: 1407px; position: absolute; display: flex; align-items: center; justify-content: center; font-size: 40px; font-family: 'Carrois Gothic'; color: black; letter-spacing: 2px;">“Burn bright. Rest easy. Live happy.”</div>
-      <div style="width: 1419px; height: 605px; left: 230px; top: 2284px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">글을 쓸 수 있는 구역 3 ...</div>
+
+    <!-- 본문 블록 2 -->
+    <div style="width: 866px; height: 733px; left: 770px; top: 1529px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">
+      글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 
+    </div>
+      <div style="width: 866px; height: 733px; left: 770px; top: 1529px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">
+        글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2 글을 쓸 수 있는 구역 2
+      </div>
+
+    <!-- 중간 인용 문구 -->
+    <div style="width: 993px; height: 77px; left: 412px; top: 1407px; position: absolute; display: flex; align-items: center; justify-content: center; font-size: 40px; font-family: 'Carrois Gothic'; color: black; letter-spacing: 2px;">
+      “Burn bright. Rest easy. Live happy.”
+    </div>
+
+    <!-- 본문 블록 3 -->
+    <div style="width: 1419px; height: 605px; left: 230px; top: 2284px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">
+      글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 
+    </div>
+</section>
+      <div style="width: 1419px; height: 605px; left: 230px; top: 2284px; position: absolute; display: flex; flex-direction: column; justify-content: center; font-size: 25px; line-height: 30px; font-family: 'Lunasima'; color: black;">
+        글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3 글을 쓸 수 있는 구역 3
+      </div>
     </section>
   </div>
 
-  <!-- 푸터: div 밖으로 이동 -->
-  <div class="footer" style="width: 100%; background: black; color: white; text-align: center; font-family: 'Bakbak One'; padding: 40px 0; font-size: 25px;">
+    <!-- 푸터 -->
+  <div class="footer">
+  <!-- 푸터 -->
+  <div class="footer" style="margin-top: 100px;">
     THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br />
     ©2023, JURAN KIM, ALL RIGHT RESERVED
   </div>
+
+    
 </body>
 </html>
