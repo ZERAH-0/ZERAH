@@ -321,3 +321,104 @@ body {
 }
 
 
+
+/* About Section Title */
+.section-title {
+  position: absolute;
+  top: 489px;
+  left: 146px;
+  font-family: 'Bakbak One', sans-serif;
+  font-size: 70px;
+}
+
+/* Title Line */
+.section-line {
+  position: absolute;
+  top: 595px;
+  left: 143px;
+  width: 1473px;
+  height: 0;
+  border-top: 3px solid black;
+}
+
+/* About Block 1 */
+.about-block-1 {
+  position: absolute;
+  left: 217px;
+  top: 619px;
+  width: 1419px;
+  height: 788px;
+  font-size: 25px;
+  font-family: 'Lunasima', sans-serif;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Quote */
+.about-quote {
+  position: absolute;
+  top: 1407px;
+  left: 412px;
+  width: 993px;
+  height: 77px;
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+/* Profile Image */
+.about-img {
+  position: absolute;
+  top: 1551px;
+  left: 216px;
+  width: 504px;
+  height: 650px;
+  border: 1px solid black;
+}
+
+/* Mascot Image */
+.about-mascot {
+  position: absolute;
+  top: 2286px;
+  left: 428px;
+  width: 336px;
+  height: 336px;
+  transform: rotate(-180deg);
+  transform-origin: top left;
+}
+
+/* About Block 2 */
+.about-block-2 {
+  position: absolute;
+  top: 1529px;
+  left: 770px;
+  width: 866px;
+  height: 733px;
+  font-size: 25px;
+  font-family: 'Lunasima', sans-serif;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* About Block 3 */
+.about-block-3 {
+  position: absolute;
+  top: 2284px;
+  left: 230px;
+  width: 1419px;
+  height: 605px;
+  font-size: 25px;
+  font-family: 'Lunasima', sans-serif;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
