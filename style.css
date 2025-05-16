@@ -407,22 +407,54 @@ body {
 
 
 /* ABOUT */
+/* About 섹션 제목 */
+.section-title {
+  font-size: 70px;
+  font-family: 'Bakbak One', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* 섹션 구분선 */
+.section-line {
+  width: 100%;
+  height: 3px;
+  background: black;
+  margin-bottom: 30px;
+}
+
+/* 본문 단락 (공통) */
+.about-block {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'Lunasima', sans-serif;
+  margin-bottom: 60px;
+}
+
+/* 인용 문구 */
+.about-quote {
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 80px 0;
+}
+
+/* 이미지 + 텍스트 수평 정렬 */
 .about-flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 60px;
+  margin-bottom: 80px;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
 }
 
+/* 프로필 이미지 감싸는 박스 */
 .about-image-wrapper {
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  flex-shrink: 0;
 }
 
+/* 프로필 이미지 */
 .about-img {
   width: 504px;
   height: 650px;
@@ -430,24 +462,28 @@ body {
   object-fit: cover;
 }
 
+/* 텍스트 블록 (이미지 옆) */
 .about-text {
   flex: 1;
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 25px;
+  line-height: 30px;
   font-family: 'Lunasima', sans-serif;
   color: black;
 }
 
+/* 마스코트 단독 아래 배치 */
 .mascot-row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
-  margin-top: 60px;
+  gap: 30px;
+  margin-top: 80px;
 }
 
+/* 마스코트 이미지 */
 .about-mascot-img {
   width: 336px;
   transform: rotate(-180deg);
   transform-origin: top left;
 }
+
