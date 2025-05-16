@@ -417,26 +417,35 @@ body {
 }
 
 .about-image-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
   flex: 0 0 auto;
 }
 
 .about-img {
-  width: 500px;
-  height: auto;
+  width: 504px;
+  height: 650px;
   border: 1px solid black;
-}
-
-.about-mascot-img {
-  width: 330px;
-  transform: rotate(-180deg);
+  object-fit: cover;
 }
 
 .about-text {
   flex: 1;
   font-size: 20px;
   line-height: 1.8;
+  font-family: 'Lunasima', sans-serif;
+  color: black;
 }
 
+/* 마스코트 단독 아래 배치 */
+.mascot-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.about-mascot-img {
+  width: 336px;
+  transform: rotate(-180deg);
+  transform-origin: top left;
+}
