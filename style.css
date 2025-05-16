@@ -403,3 +403,46 @@ body {
 .menu-links a:hover {
   opacity: 0.6;
 }
+
+
+/*about*/
+.content-section {
+  padding: 80px 10%;
+}
+
+.about-block {
+  margin-bottom: 60px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.about-quote {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 60px;
+  font-style: italic;
+}
+
+.about-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.about-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.about-mascot-img {
+  width: 300px;
+}
+
