@@ -322,103 +322,99 @@ body {
 
 
 
-/* About Section Title */
-.section-title {
-  position: absolute;
-  top: 489px;
-  left: 146px;
-  font-family: 'Bakbak One', sans-serif;
-  font-size: 70px;
-}
 
-/* Title Line */
-.section-line {
-  position: absolute;
-  top: 595px;
-  left: 143px;
-  width: 1473px;
-  height: 0;
-  border-top: 3px solid black;
-}
 
-/* About Block 1 */
-.about-block-1 {
-  position: absolute;
-  left: 217px;
-  top: 619px;
-  width: 1419px;
-  height: 788px;
-  font-size: 25px;
+/* About 섹션 스타일 */
+.content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 50px;
   font-family: 'Lunasima', sans-serif;
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: #000;
 }
 
-/* Quote */
+/* 섹션 타이틀 */
+.section-title {
+  font-size: 70px;
+  font-family: 'Bakbak One', cursive;
+  margin-bottom: 10px;
+}
+
+/* 구분선 */
+.section-line {
+  border-top: 3px solid #000;
+  margin-bottom: 40px;
+}
+
+/* 본문 블록 */
+.about-block {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* 인용 문구 */
 .about-quote {
-  position: absolute;
-  top: 1407px;
-  left: 412px;
-  width: 993px;
-  height: 77px;
-  font-family: 'Carrois Gothic', sans-serif;
   font-size: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: 'Carrois Gothic', sans-serif;
+  text-align: center;
+  margin: 60px 0;
   letter-spacing: 2px;
 }
 
-/* Profile Image */
-.about-img {
-  position: absolute;
-  top: 1551px;
-  left: 216px;
-  width: 504px;
-  height: 650px;
-  border: 1px solid black;
+/* 이미지와 텍스트를 나란히 배치 */
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
 }
 
-/* Mascot Image */
-.about-mascot {
-  position: absolute;
-  top: 2286px;
-  left: 428px;
+.about-image-wrapper {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.about-text {
+  flex: 1 1 55%;
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* 마스코트 이미지와 텍스트 */
+.mascot-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.about-mascot-img {
   width: 336px;
   height: 336px;
   transform: rotate(-180deg);
-  transform-origin: top left;
 }
 
-/* About Block 2 */
-.about-block-2 {
-  position: absolute;
-  top: 1529px;
-  left: 770px;
-  width: 866px;
-  height: 733px;
+.mascot-row p {
+  flex: 1;
   font-size: 25px;
-  font-family: 'Lunasima', sans-serif;
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  line-height: 1.6;
 }
 
-/* About Block 3 */
-.about-block-3 {
-  position: absolute;
-  top: 2284px;
-  left: 230px;
-  width: 1419px;
-  height: 605px;
-  font-size: 25px;
-  font-family: 'Lunasima', sans-serif;
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* 푸터 스타일 */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  color: #000;
 }
-
