@@ -6,15 +6,7 @@
   <title>About - ZERAH</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Bakbak+One&family=Changa+One&family=Lunasima:wght@400;700&family=Carrois+Gothic&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background: #FFFEFB;
-      font-family: 'Lunasima', sans-serif;
-      min-width: 1728px;
-      position: relative;
-    }
-  </style>
+
 </head>
 <body>
   <div style="width: 1728px; height: 3053px; position: relative; background: #FFFEFB; overflow: hidden">
@@ -26,21 +18,37 @@
     <p>“Crafting virtual realities that feel alive.”</p>
   </div>
 
-      <!-- 메뉴 오버레이 -->
+  <!-- 메뉴 오버레이 -->
   <div class="menu-overlay">
     <div class="menu-container">
       <div class="menu-back-button">Back</div>
-      <div class="menu-title">MENU</div>
+      <h2 class="menu-title">MENU</h2>
+      <nav class="menu-links">
+        <a href="about.html">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <nav class="menu-links">
-      <a href="about.html">About</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#activities">Activities</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </div>
 
+  <!-- 메뉴 열고 닫기 스크립트 -->
+  <script>
+    const menuBtn = document.querySelector('.nav-button.right');
+    const backBtn = document.querySelector('.menu-back-button');
+    const menuOverlay = document.querySelector('.menu-overlay');
+
+    menuBtn.addEventListener('click', () => {
+      menuOverlay.classList.add('active');
+    });
+
+    backBtn.addEventListener('click', () => {
+      menuOverlay.classList.remove('active');
+    });
+  </script>
+
+    
 
     <!-- About 섹션 타이틀 -->
     <div style="width: 256.61px; height: 81.94px; left: 132px; top: 455px; position: absolute; display: flex; align-items: center; font-size: 70px; font-family: 'Bakbak One'; color: black;">About</div>
@@ -71,23 +79,11 @@
     </div>
 
     <!-- 푸터 -->
-    <div style="width: 1776px; height: 122px; left: -24px; top: 2931px; position: absolute; background: black;"></div>
-    <div style="width: 1079px; height: 96px; left: 322px; top: 2943px; position: absolute; display: flex; justify-content: center; align-items: center; text-align: center; font-size: 25px; font-family: 'Bakbak One'; color: white;">
-      THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br />©2023, JURAN KIM, ALL RIGHT RESERVED
-    </div>
-      <!-- 메뉴 스크립트 -->
-  <script>
-    const menuBtn = document.querySelector('.nav-button.right');
-    const backBtn = document.querySelector('.menu-back-button');
-    const menuOverlay = document.querySelector('.menu-overlay');
+  <div class="footer">
+    THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br />
+    ©2023, JURAN KIM, ALL RIGHT RESERVED
+  </div>
 
-    menuBtn.addEventListener('click', () => {
-      menuOverlay.classList.add('active');
-    });
-
-    backBtn.addEventListener('click', () => {
-      menuOverlay.classList.remove('active');
-    });
-  </script>
+    
 </body>
 </html>
