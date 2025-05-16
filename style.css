@@ -425,22 +425,22 @@ body {
 
 .about-flex {
   display: flex;
-  gap: 40px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 60px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
-.about-image-wrapper img {
-  max-width: 100%;
-  height: auto;
+.about-image-wrapper {
+  flex: 0 0 auto;
 }
 
 .about-text {
   flex: 1;
-  font-size: 20px;
-  line-height: 1.8;
+  min-width: 300px;
 }
+
 
 .about-mascot-img {
   width: 300px;
