@@ -409,3 +409,47 @@ body {
   color: inherit;
   display: block;
 }
+
+
+
+
+
+
+/* Projects 디자인 */
+.project-block {
+  width: 100%;
+  max-width: 1422px;
+  margin: 40px auto;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.project-title-bar {
+  height: 55px;
+  background-color: #BA4009;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  font-family: 'Lunasima', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.project-img {
+  width: 100%;
+  height: 271px;
+  display: block;
+  object-fit: cover;
+}
+
+.project-mascot {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  width: 150px;
+  height: auto;
+  transform: scaleX(-1);
+  z-index: 1;
+}
