@@ -443,6 +443,10 @@ body {
   display: block;
   object-fit: cover;
 }
+.project-block-link {
+  text-decoration: none;
+  display: block;
+}
 
 .project-mascot {
   position: absolute;
