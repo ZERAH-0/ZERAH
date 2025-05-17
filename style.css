@@ -319,3 +319,31 @@ body {
 .menu-links a:hover {
   opacity: 0.6;
 }
+
+
+/*ABOUT 디자인 */
+.about-title h2 {
+  font-family: 'Bakbak One';
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+.about-title hr {
+  border: 2px solid black;
+  margin-bottom: 40px;
+}
+.about-section {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+.about-text {
+  font-size: 25px;
+  line-height: 32px;
+}
+.quote {
+  text-align: center;
+  font-family: 'Carrois Gothic';
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 60px 0;
+}
