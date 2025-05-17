@@ -320,8 +320,7 @@ body {
   opacity: 0.6;
 }
 
-
-/*ABOUT 디자인 */
+/* ===================== About 디자인 ===================== */
 .about-section {
   padding: 10px 100px;
   position: relative;
@@ -368,8 +367,8 @@ body {
 }
 
 
+/* ===================== Research 디자인 ===================== */
 
-/* Research 디자인 */
 .research-block {
   width: 100%;
   max-width: 1422px;
@@ -416,8 +415,7 @@ body {
 
 
 
-
-/* Projects 디자인 */
+/* ===================== Projects 디자인 ===================== */
 .project-block {
   width: 100%;
   max-width: 1422px;
@@ -459,3 +457,58 @@ body {
   transform: scaleX(-1);
   z-index: 1;
 }
+
+
+
+/* ===================== ACTIVITY 디자인 ===================== */
+
+.activity-block-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 두 개씩 나열 */
+  gap: 40px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.activity-block {
+  width: 650px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.activity-title-bar {
+  background-color: #2B64A0; /* 파란색 */
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Lunasima', sans-serif;
+  border-bottom: 1px solid black;
+}
+
+.activity-img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+}
+
+.activity-mascots {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 100px 0;
+}
+
+.activity-mascots img {
+  width: 70px;
+  height: auto;
+}
+
