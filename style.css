@@ -325,64 +325,110 @@ body {
 .about-wrapper {
   max-width: 1728px;
   margin: 0 auto;
-  padding: 60px 80px;
+  padding: 0;
   position: relative;
+  background: #FFFEFB;
+  overflow: hidden;
 }
 
 .about-banner {
-  margin-bottom: 40px;
+  position: absolute;
+  top: 489px;
+  left: 146.48px;
 }
 
 .about-title {
   font-family: 'Bakbak One', sans-serif;
   font-size: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .about-line {
-  height: 3px;
-  width: 100%;
-  background-color: black;
-  margin-bottom: 40px;
+  position: absolute;
+  width: 1473.45px;
+  height: 0;
+  left: -3px;
+  top: 106.05px;
+  outline: 3px black solid;
+  outline-offset: -1.5px;
 }
 
 .about-section {
+  position: absolute;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 80px;
-  position: relative;
-  gap: 40px;
+  flex-direction: column;
 }
 
-.about-profile {
+.about-section.section1 {
+  top: 619px;
+  left: 217px;
+  width: 1419px;
+  height: 788px;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'Lunasima';
+  font-weight: 400;
+  color: black;
+}
+
+.about-section.section2-text {
+  top: 1529px;
+  left: 770px;
+  width: 866px;
+  height: 733px;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'Lunasima';
+  font-weight: 400;
+  color: black;
+}
+
+.about-section.section2-image img {
+  position: absolute;
+  top: 1551px;
+  left: 216.48px;
   width: 504px;
   height: 650px;
-  object-fit: cover;
   border: 1px solid black;
 }
 
-.about-text {
+.about-section.section3-text {
+  top: 2284px;
+  left: 230px;
+  width: 1419px;
+  height: 605px;
   font-size: 25px;
   line-height: 30px;
-  font-family: 'Lunasima', sans-serif;
-  flex: 1;
+  font-family: 'Lunasima';
+  font-weight: 400;
+  color: black;
+}
+
+.about-section.section3-image img {
+  position: absolute;
+  top: 2286.11px;
+  left: 427.84px;
+  width: 335.85px;
+  height: 336.50px;
+  transform: rotate(-180deg);
+  transform-origin: top left;
 }
 
 .quote {
-  font-family: 'Carrois Gothic';
-  font-size: 30px;
-  text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: 100px;
-}
-
-.about-mascot {
-  width: 336px;
-  height: 336px;
-  transform: rotate(-180deg);
   position: absolute;
-  bottom: -80px;
-  left: 100px;
-  z-index: 2;
+  top: 1407px;
+  left: 412.48px;
+  width: 993px;
+  height: 77px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 40px;
+  font-family: 'Carrois Gothic';
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
 }
