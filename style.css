@@ -395,3 +395,12 @@ body {
   display: block;
 }
 
+.research-mascot {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  width: 160px;
+  height: auto;
+  z-index: 1;
+}
+
