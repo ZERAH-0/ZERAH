@@ -368,5 +368,5 @@ body {
   bottom: -50px;
   left: -40px;
   z-index: 2;
-  transform: none;
+  transform: scaleX(-1);
 }
