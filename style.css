@@ -328,58 +328,49 @@ body {
   margin-top: 100px;
   margin-left: 146px;
 }
-
-.about-underline {
+.about-title hr {
   width: 1473px;
   height: 3px;
   background: black;
   margin-left: 143px;
   margin-top: 10px;
+  border: none;
 }
 
-.about-text1,
-.about-text2,
-.about-text3 {
-  font-size: 25px;
-  line-height: 30px;
-  font-family: 'Lunasima', sans-serif;
-  color: black;
-  margin-left: 217px;
-  margin-right: 100px;
-  margin-top: 40px;
-}
-
-.about-text2 {
-  margin-left: 770px;
-  margin-top: 20px;
-}
-
-.about-text3 {
-  margin-left: 230px;
-  margin-top: 40px;
-}
-
-.about-quote {
-  font-family: 'Carrois Gothic', sans-serif;
-  font-size: 40px;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: 80px auto;
+.about-section {
+  display: flex;
+  gap: 50px;
+  margin: 80px 146px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .about-profile {
   width: 504px;
   height: 650px;
   border: 1px solid black;
-  margin-left: 216px;
-  margin-top: 50px;
 }
 
 .about-mascot {
   width: 336px;
   height: 336px;
   transform: rotate(-180deg);
-  margin-top: 20px;
-  margin-left: 428px;
 }
 
+.about-text1,
+.about-text2,
+.about-text3 {
+  font-family: 'Lunasima', sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  max-width: 866px;
+  color: black;
+}
+
+.quote {
+  text-align: center;
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 100px 0;
+}
