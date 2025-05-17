@@ -510,5 +510,6 @@ body {
 .activity-mascots img {
   width: 180px;
   height: auto;
+  transform: scaleX(-1);
 }
 
