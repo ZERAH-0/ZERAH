@@ -322,30 +322,61 @@ body {
 
 
 /*ABOUT 디자인 */
+.about-wrapper {
+  width: 1728px;
+  margin: 0 auto;
+  padding: 60px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-banner {
+  margin-left: 146px;
+}
+
 .about-title {
   font-family: 'Bakbak One', sans-serif;
   font-size: 70px;
-  margin-top: 100px;
-  margin-left: 146px;
+  margin-bottom: 10px;
 }
-.about-title hr {
+
+.about-line {
   width: 1473px;
   height: 3px;
   background: black;
-  margin-left: 143px;
-  margin-top: 10px;
-  border: none;
 }
 
-
+/* 각 구역 */
 .about-section {
   display: flex;
   gap: 50px;
-  margin: 80px 146px;
+  margin: 100px 146px;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
+/* 텍스트 */
+.about-text {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'Lunasima', sans-serif;
+  max-width: 866px;
+}
+
+.about-text1 {
+  margin-top: 40px;
+}
+
+.about-text2 {
+  margin-top: 20px;
+}
+
+.about-text3 {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+/* 이미지 */
 .about-profile {
   width: 504px;
   height: 650px;
@@ -356,18 +387,10 @@ body {
   width: 336px;
   height: 336px;
   transform: rotate(-180deg);
+  border: none;
 }
 
-.about-text1,
-.about-text2,
-.about-text3 {
-  font-family: 'Lunasima', sans-serif;
-  font-size: 25px;
-  line-height: 30px;
-  max-width: 866px;
-  color: black;
-}
-
+/* 인용구 */
 .quote {
   text-align: center;
   font-family: 'Carrois Gothic', sans-serif;
