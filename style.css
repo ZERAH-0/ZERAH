@@ -399,8 +399,8 @@ body {
 
 .research-mascot {
   position: absolute;
-  bottom: -600px;
-  right: 10px;
+  bottom: -700px;
+  right: 5px;
   width: 300px;
   height: auto;
   z-index: 1;
