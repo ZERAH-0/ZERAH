@@ -252,7 +252,7 @@ body {
   background-color: black;
   z-index: 1000;
   display: none;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .menu-overlay.active {
