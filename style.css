@@ -325,69 +325,64 @@ body {
 .about-wrapper {
   max-width: 1728px;
   margin: 0 auto;
-  padding: 120px 0 160px;
+  padding: 60px 80px;
+  position: relative;
 }
 
 .about-banner {
-  padding-left: 146px;
+  margin-bottom: 40px;
 }
 
 .about-title {
   font-family: 'Bakbak One', sans-serif;
   font-size: 70px;
-  margin-bottom: 10px;
-  color: black;
+  margin-bottom: 20px;
 }
 
 .about-line {
-  width: 1473px;
   height: 3px;
-  background: black;
-  margin: 20px 0 80px;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 40px;
 }
 
 .about-section {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 50px;
-  margin: 80px 146px;
+  margin-bottom: 80px;
   position: relative;
+  gap: 40px;
 }
 
 .about-profile {
   width: 504px;
   height: 650px;
+  object-fit: cover;
   border: 1px solid black;
 }
 
-.about-mascot {
-  position: absolute;
-  bottom: -40px;
-  left: 100px;
-  width: 336px;
-  height: 336px;
-  transform: rotate(-180deg);
-  z-index: 3;
-}
-
 .about-text {
-  font-family: 'Lunasima', sans-serif;
   font-size: 25px;
-  line-height: 32px;
-  max-width: 866px;
-  color: black;
-}
-
-.about-text1,
-.about-text2,
-.about-text3 {
-  padding-top: 20px;
+  line-height: 30px;
+  font-family: 'Lunasima', sans-serif;
+  flex: 1;
 }
 
 .quote {
+  font-family: 'Carrois Gothic';
+  font-size: 30px;
   text-align: center;
-  font-family: 'Carrois Gothic', sans-serif;
-  font-size: 40px;
   letter-spacing: 2px;
-  margin: 120px 0 100px;
+  margin-bottom: 100px;
+}
+
+.about-mascot {
+  width: 336px;
+  height: 336px;
+  transform: rotate(-180deg);
+  position: absolute;
+  bottom: -80px;
+  left: 100px;
+  z-index: 2;
 }
