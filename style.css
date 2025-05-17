@@ -322,6 +322,12 @@ body {
 
 
 /*ABOUT 디자인 */
+.about-section {
+  padding: 30px 100px;
+  position: relative;
+}
+
+
 .about-wrapper {
   max-width: 1728px;
   margin: 0 auto;
