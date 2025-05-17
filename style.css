@@ -365,8 +365,8 @@ body {
   width: 336px;
   height: 336px;
   position: absolute;
-  bottom: -90px;
-  right: -80px;
+  bottom: -50px;
+  right: -120px;
   z-index: 2;
   transform: scaleX(-1);
 }
