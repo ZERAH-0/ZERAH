@@ -371,9 +371,11 @@ body {
 
 /* Research 디자인 */
 .research-block {
-  width: 1422px;
-  margin: 60px auto; /* 위아래 간격, 좌우 중앙 정렬 */
-  position: relative;
+  width: 100%;
+  max-width: 1422px;
+  margin: 40px auto;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .research-title-bar {
@@ -399,7 +401,7 @@ body {
   position: absolute;
   bottom: -850px;
   right: 10px;
-  width: 337.84px;
+  width: 300px;
   height: auto;
   z-index: 1;
 }
@@ -452,7 +454,7 @@ body {
   position: absolute;
   bottom: 80px;
   left: 80px;
-  width: 150px;
+  width: 300px;
   height: auto;
   transform: scaleX(-1);
   z-index: 1;
