@@ -393,8 +393,8 @@ body {
 .research-img {
   width: 100%;
   height: 271px;
-  border: 1px solid black;
   display: block;
+  object-fit: cover;
 }
 
 .research-mascot {
@@ -452,8 +452,8 @@ body {
 
 .project-mascot {
   position: absolute;
-  bottom: 80px;
-  left: 80px;
+  bottom: 150px;
+  left: 10px;
   width: 300px;
   height: auto;
   transform: scaleX(-1);
