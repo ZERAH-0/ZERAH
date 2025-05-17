@@ -322,7 +322,6 @@ body {
 
 
 /*ABOUT 디자인 */
-/* About */
 .about-wrapper {
   max-width: 1728px;
   margin: 0 auto;
@@ -330,22 +329,6 @@ body {
   position: relative;
 }
 
-.about-banner {
-  margin-bottom: 40px;
-}
-
-.about-title {
-  font-family: 'Bakbak One', sans-serif;
-  font-size: 70px;
-  margin-bottom: 20px;
-}
-
-.about-line {
-  height: 3px;
-  width: 100%;
-  background-color: black;
-  margin-bottom: 40px;
-}
 
 .about-section {
   display: flex;
