@@ -335,16 +335,6 @@ body {
   position: relative;
 }
 
-
-.about-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 80px;
-  position: relative;
-  gap: 40px;
-}
-
 .about-profile {
   width: 504px;
   height: 650px;
