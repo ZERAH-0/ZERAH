@@ -404,3 +404,8 @@ body {
   z-index: 1;
 }
 
+.research-block-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
