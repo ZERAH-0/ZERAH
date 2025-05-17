@@ -323,15 +323,13 @@ body {
 
 /*ABOUT 디자인 */
 .about-wrapper {
-  width: 1728px;
+  max-width: 1728px;
   margin: 0 auto;
   padding: 120px 0 160px;
-  position: relative;
-  overflow: hidden;
 }
 
 .about-banner {
-  margin-left: 146px;
+  padding-left: 146px;
 }
 
 .about-title {
@@ -345,65 +343,51 @@ body {
   width: 1473px;
   height: 3px;
   background: black;
-  margin-top: 10px;
-  margin-bottom: 60px;
+  margin: 20px 0 80px;
 }
 
-/* 각 텍스트 & 이미지 블록 */
 .about-section {
   display: flex;
-  position: relative;
+  align-items: flex-start;
   gap: 50px;
   margin: 80px 146px;
-  align-items: flex-start;
+  position: relative;
 }
 
-/* 프로필 이미지 */
 .about-profile {
   width: 504px;
   height: 650px;
   border: 1px solid black;
 }
 
-/* 마스코트 이미지 */
 .about-mascot {
+  position: absolute;
+  bottom: -40px;
+  left: 100px;
   width: 336px;
   height: 336px;
-  position: absolute;
-  left: 240px; /* 프로필과 적절히 겹치도록 */
-  top: 420px;
   transform: rotate(-180deg);
-  z-index: 2;
+  z-index: 3;
 }
 
-/* 본문 텍스트들 */
 .about-text {
   font-family: 'Lunasima', sans-serif;
   font-size: 25px;
-  line-height: 30px;
-  color: black;
+  line-height: 32px;
   max-width: 866px;
+  color: black;
 }
 
-.about-text1 {
-  margin-top: 40px;
-}
-
-.about-text2 {
-  margin-top: 20px;
-}
-
+.about-text1,
+.about-text2,
 .about-text3 {
-  margin-left: 240px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
-/* 인용구 */
 .quote {
   text-align: center;
   font-family: 'Carrois Gothic', sans-serif;
   font-size: 40px;
   letter-spacing: 2px;
-  margin: 100px 0;
-  color: black;
+  margin: 120px 0 100px;
 }
