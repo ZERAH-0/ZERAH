@@ -325,7 +325,7 @@ body {
 .about-wrapper {
   width: 1728px;
   margin: 0 auto;
-  padding: 60px 0 100px;
+  padding: 120px 0 160px;
   position: relative;
   overflow: hidden;
 }
@@ -338,28 +338,50 @@ body {
   font-family: 'Bakbak One', sans-serif;
   font-size: 70px;
   margin-bottom: 10px;
+  color: black;
 }
 
 .about-line {
   width: 1473px;
   height: 3px;
   background: black;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
-/* 각 구역 */
+/* 각 텍스트 & 이미지 블록 */
 .about-section {
   display: flex;
+  position: relative;
   gap: 50px;
-  margin: 100px 146px;
+  margin: 80px 146px;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
-/* 텍스트 */
+/* 프로필 이미지 */
+.about-profile {
+  width: 504px;
+  height: 650px;
+  border: 1px solid black;
+}
+
+/* 마스코트 이미지 */
+.about-mascot {
+  width: 336px;
+  height: 336px;
+  position: absolute;
+  left: 240px; /* 프로필과 적절히 겹치도록 */
+  top: 420px;
+  transform: rotate(-180deg);
+  z-index: 2;
+}
+
+/* 본문 텍스트들 */
 .about-text {
+  font-family: 'Lunasima', sans-serif;
   font-size: 25px;
   line-height: 30px;
-  font-family: 'Lunasima', sans-serif;
+  color: black;
   max-width: 866px;
 }
 
@@ -372,22 +394,8 @@ body {
 }
 
 .about-text3 {
+  margin-left: 240px;
   margin-top: 20px;
-  margin-left: 80px;
-}
-
-/* 이미지 */
-.about-profile {
-  width: 504px;
-  height: 650px;
-  border: 1px solid black;
-}
-
-.about-mascot {
-  width: 336px;
-  height: 336px;
-  transform: rotate(-180deg);
-  border: none;
 }
 
 /* 인용구 */
@@ -397,4 +405,5 @@ body {
   font-size: 40px;
   letter-spacing: 2px;
   margin: 100px 0;
+  color: black;
 }
