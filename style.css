@@ -520,5 +520,6 @@ body {
   width: 244px;
   height: 245px;
   transform: rotate(180deg);
+  transform: scaleY(-1)
 }
 
