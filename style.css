@@ -566,3 +566,138 @@ body {
 
 
 /* ========================================== 반응형 디자인 ========================================== */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .header {
+    padding: 20px 10px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .header p {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .nav-button {
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+    top: 10px;
+    padding: 2px;
+    border-width: 2px;
+  }
+
+  .nav-button.left {
+    left: 10px;
+  }
+
+  .nav-button.right {
+    right: 10px;
+  }
+
+  .content-section,
+  .blue-section {
+    padding: 20px 16px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .more-button {
+    position: static;
+    width: 60px;
+    height: 28px;
+    font-size: 10px;
+    margin-top: 10px;
+    border-width: 1.5px;
+  }
+
+  .section-line {
+    margin: 10px 0;
+    height: 1.5px;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .image-block img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .about-img,
+  .research-img,
+  .project-img,
+  .activity-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-image-wrapper,
+  .contact-image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-mascot-img,
+  .contact-mascot-img {
+    position: static;
+    width: 60px;
+    height: 60px;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .contact-text {
+    font-size: 12px;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .contact-line {
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .contact-icon {
+    font-size: 16px;
+  }
+
+  .menu-title {
+    font-size: 28px;
+    top: 36px;
+  }
+
+  .menu-links {
+    top: 140px;
+    gap: 30px;
+  }
+
+  .menu-links a {
+    font-size: 22px;
+  }
+
+  .footer {
+    font-size: 10px;
+    padding: 12px;
+    line-height: 14px;
+    word-break: keep-all;
+  }
+}
+
