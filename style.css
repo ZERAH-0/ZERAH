@@ -514,6 +514,7 @@ body {
   justify-content: flex-end;
   padding-right: 15px;
   margin-top: 20px;
+  margin-bottom: -60px;
   padding-right: 10px;
   z-index: 1;
 }
