@@ -629,18 +629,19 @@ body {
     gap: 12px;
   }
 
-  .image-block img {
+  .image-block {
     width: 100%;
-    height: auto;
-    max-width: 100%;
   }
 
+  .image-block img,
   .about-img,
   .research-img,
   .project-img,
   .activity-img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    display: block;
   }
 
   .about-image-wrapper,
@@ -653,7 +654,7 @@ body {
   .contact-mascot-img {
     position: static;
     width: 60px;
-    height: 60px;
+    height: auto;
     transform: none;
     margin-top: 10px;
   }
@@ -700,54 +701,3 @@ body {
     word-break: keep-all;
   }
 }
-
-@media (max-width: 480px) {
-  /* 연구 이미지 */
-  .research-img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100%;
-  }
-
-  /* 프로젝트 이미지 */
-  .project-img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100%;
-  }
-
-  /* 액티비티 이미지 */
-  .activity-img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100%;
-  }
-
-  /* About 프로필 이미지 */
-  .about-img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100%;
-  }
-
-  .about-image-wrapper,
-  .contact-image-wrapper {
-    width: 100%;
-    height: auto;
-  }
-
-  .about-mascot-img,
-  .contact-mascot-img {
-    position: static;
-    width: 60px;
-    height: auto;
-    transform: none;
-    margin-top: 10px;
-  }
-
-  /* image-block이 반응형 배치를 따라가도록 */
-  .image-block {
-    width: 100%;
-  }
-}
-
