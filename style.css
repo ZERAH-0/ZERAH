@@ -512,12 +512,15 @@ body {
 .detail-mascot-wrapper {
   display: flex;
   justify-content: flex-end;
+  padding-right: 40px;
   margin-top: 60px;
   padding-right: 100px;
+  z-index: 1;
 }
 
 .detail-mascot {
   width: 244px;
   height: 245px;
+  transform: scaleX(-1);
 }
 
