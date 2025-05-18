@@ -508,6 +508,7 @@ body {
   transform: scaleX(-1);
 }
 
+
 /* ===================== 내부 사이트 디자인 ===================== */
 .detail-mascot-wrapper {
   display: flex;
@@ -524,4 +525,34 @@ body {
   height: 300px;
   transform: scaleX(-1);
 }
+
+
+
+/* ===================== Contact 디자인 ===================== */
+.contact-mascot-small {
+  width: 160px;
+  height: 160px;
+  transform: rotate(180deg);
+}
+
+.mascot-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.contact-extra-images {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 60px;
+}
+
+.contact-box-img {
+  width: 626px;
+  height: 337px;
+  border: 1px solid black;
+  object-fit: cover;
+}
+
 
