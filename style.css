@@ -157,19 +157,19 @@ body {
   height: 240px;
 }
 
-.research-img {
+.image-block img.research-img {
   width: 297px;
   height: 404px;
   border: 1px solid black;
 }
 
-.project-img {
+.image-block img.project-img {
   width: 670px;
   height: 335px;
   border: 1px solid black;
 }
 
-.activity-img {
+.image-block img.activity-img {
   width: 525px;
   height: 552px;
   border: 1px solid black;
@@ -214,7 +214,6 @@ body {
   transform: rotate(168deg) scaleY(-1);
 }
 
-
 .contact-text {
   display: flex;
   flex-direction: column;
@@ -234,7 +233,6 @@ body {
 .contact-icon {
   font-size: 50px;
 }
-
 
 /* 메뉴 오버레이 */
 .menu-overlay {
