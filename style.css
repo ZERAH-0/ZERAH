@@ -507,3 +507,18 @@ body {
   height: auto;
   transform: scaleX(-1);
 }
+
+/* ===================== 내부 사이트 디자인 ===================== */
+.detail-mascot-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+  padding-right: 100px;
+}
+
+.detail-mascot {
+  width: 244px;
+  height: 245px;
+  transform: rotate(180deg);
+}
+
