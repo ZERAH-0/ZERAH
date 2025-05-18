@@ -561,3 +561,105 @@ body {
   margin-bottom: 12px; 
   line-height: 0.2; 
 }
+
+
+
+
+/* ========================================== 반응형 디자인 ========================================== */
+@media screen and (max-width: 768px) {
+  body {
+    min-width: auto;
+    padding: 0 10px;
+  }
+
+  .header {
+    padding: 20px 10px;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .header p {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .nav-button {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+    border: 2px solid white;
+  }
+
+  .more-button {
+    width: 37px;
+    height: 20px;
+    font-size: 10px;
+    border: 1.5px solid black;
+    top: auto;
+    right: 10px;
+    position: absolute;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .section-line {
+    height: 1px;
+    margin: 5px 0;
+  }
+
+  .image-grid {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .image-block img {
+    width: 120px;
+    height: auto;
+  }
+
+  .image-title {
+    font-size: 10px;
+  }
+
+  .image-desc {
+    font-size: 8px;
+  }
+
+  .footer {
+    font-size: 5px;
+    padding: 10px;
+  }
+
+  .contact-line {
+    gap: 5px;
+    font-size: 10px;
+  }
+
+  .contact-icon {
+    font-size: 15px;
+  }
+
+  .about-img,
+  .about-mascot-img,
+  .contact-img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .detail-mascot {
+    width: 64px;
+    height: 64px;
+    transform: rotate(168deg) scaleY(-1);
+    margin-top: 30px;
+  }
+
+  .detail-mascot-wrapper {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+}
