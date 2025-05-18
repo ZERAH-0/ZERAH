@@ -626,36 +626,39 @@ body {
 
   .image-grid {
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
+    align-items: center;
   }
 
   .image-block {
-    width: 100%;
-  }
-
-  .image-block img,
-  .about-img,
-  .research-img,
-  .project-img,
-  .activity-img {
     width: 100% !important;
-    height: auto !important;
-    max-width: 100%;
-    display: block;
+    margin: 0 auto;
   }
 
   .about-image-wrapper,
   .contact-image-wrapper {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+  .about-img,
+  .research-img,
+  .project-img,
+  .activity-img,
+  .contact-img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block !important;
   }
 
   .about-mascot-img,
   .contact-mascot-img {
-    position: static;
-    width: 60px;
-    height: auto;
-    transform: none;
+    width: 60px !important;
+    height: auto !important;
+    transform: none !important;
+    position: static !important;
     margin-top: 10px;
   }
 
@@ -701,54 +704,3 @@ body {
     word-break: keep-all;
   }
 }
-
-@media (max-width: 480px) {
-  /* 이미지 부모도 유동적으로 */
-  .about-image-wrapper,
-  .contact-image-wrapper,
-  .image-block {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-  }
-
-  /* 이미지 리사이징 강제 적용 */
-  .about-img,
-  .research-img,
-  .project-img,
-  .activity-img,
-  .contact-img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100% !important;
-    display: block !important;
-  }
-
-  /* 마스코트 이미지도 줄이기 */
-  .about-mascot-img,
-  .contact-mascot-img {
-    width: 60px !important;
-    height: auto !important;
-    transform: none !important;
-    position: static !important;
-    margin-top: 10px;
-  }
-
-  /* .image-grid 정렬 단일화 */
-  .image-grid {
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-  }
-
-  /* 전체 섹션 너비 정리 */
-  .content-section,
-  .blue-section {
-    padding: 20px 16px;
-  }
-
-  .image-block {
-    margin: 0 auto;
-  }
-}
-
