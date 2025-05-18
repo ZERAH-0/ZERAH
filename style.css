@@ -557,7 +557,7 @@ body {
 .contact-inline {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 2px;
   margin-bottom: 12px; 
-  line-height: 0.8; 
+  line-height: 0.2; 
 }
