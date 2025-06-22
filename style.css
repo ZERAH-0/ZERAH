@@ -358,7 +358,7 @@ body {
 .about-text {
   font-size: 25px;
   line-height: 30px;
-  font-family: 'Lunasima', sans-serif;
+  font-family: 'SCDream', 'Lunasima', sans-serif;
   flex: 1;
 }
 
@@ -396,7 +396,7 @@ body {
   background: #2B7E50;
   color: white;
   font-size: 30px;
-  font-family: 'Lunasima', sans-serif;
+  font-family: 'SCDream', 'Lunasima', sans-serif;
   font-weight: 700;
   line-height: 55px;
   padding-left: 30px;
@@ -446,7 +446,7 @@ body {
   align-items: center;
   padding-left: 20px;
   color: white;
-  font-family: 'Lunasima', sans-serif;
+  font-family: 'SCDream', 'Lunasima', sans-serif;
   font-weight: 700;
   font-size: 22px;
 }
@@ -500,7 +500,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: white;
-  font-family: 'Lunasima', sans-serif;
+  font-family: 'SCDream', 'Lunasima', sans-serif;
   border-bottom: 1px solid black;
 }
 
