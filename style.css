@@ -163,7 +163,8 @@ body {
 
 .image-title {
   font-weight: 600;
-  margin-top: 25px;
+  margin-top: 20px;
+  font-size: 25px;
 }
 
 .image-desc {
