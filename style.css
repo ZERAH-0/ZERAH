@@ -95,10 +95,27 @@ body {
   margin-bottom: 10px;
 }
 
+/* 제목 스타일 */
 .section-title2 {
   font-size: 70px;
-  font-family: 'SCDream','Bakbak One', sans-serif;
+  font-family: 'SCDream', 'Bakbak One', sans-serif;
+  font-weight: 900;
   margin-bottom: 10px;
+}
+
+/* 본문 텍스트 기본 */
+.detail-text {
+  font-family: 'SCDream', 'Lunasima', sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  max-width: 1436px;
+  margin: 80px auto 0 auto;
+}
+
+/* 본문 내 강조 (b 태그) */
+.detail-text b {
+  font-weight: 600; 
 }
 
 .more-button {
