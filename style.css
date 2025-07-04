@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Paperlogy';
-  src: url('./fonts/Paperlogy-Regular.woff2') format('woff2');
+  src: url('fonts/Paperlogy-4Regular.ttf') format('truetype');
   font-weight: 400;
 }
-
 @font-face {
   font-family: 'Paperlogy';
-  src: url('./fonts/Paperlogy-SemiBold.woff2') format('woff2');
+  src: url('fonts/Paperlogy-6SemiBold.ttf') format('truetype');
   font-weight: 600;
 }
-
 @font-face {
   font-family: 'Paperlogy';
-  src: url('./fonts/Paperlogy-Black.woff2') format('woff2');
+  src: url('fonts/Paperlogy-9Black.ttf') format('truetype');
   font-weight: 900;
 }
+
+
 
 /* Reset */
 * {
