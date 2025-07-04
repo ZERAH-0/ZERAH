@@ -1,24 +1,20 @@
 @font-face {
-  font-family: 'SCDream';
-  src: url('fonts/SCDream4.woff2') format('woff2');
+  font-family: 'Paperlogy';
+  src: url('./fonts/Paperlogy-Regular.woff2') format('woff2');
   font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'SCDream';
-  src: url('fonts/SCDream6.woff2') format('woff2');
+  font-family: 'Paperlogy';
+  src: url('./fonts/Paperlogy-SemiBold.woff2') format('woff2');
   font-weight: 600;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'SCDream';
-  src: url('fonts/SCDream9.woff2') format('woff2');
+  font-family: 'Paperlogy';
+  src: url('./fonts/Paperlogy-Black.woff2') format('woff2');
   font-weight: 900;
-  font-style: normal;
 }
-
 
 /* Reset */
 * {
