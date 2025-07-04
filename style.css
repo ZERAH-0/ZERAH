@@ -103,8 +103,8 @@ body {
 /* 본문 텍스트 기본 */
 .detail-text {
   font-family: 'Paperlogy', 'Lunasima', sans-serif;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 35px;
+  line-height: 40px;
   font-weight: 400;
   max-width: 1436px;
   margin: 80px auto 0 auto;
