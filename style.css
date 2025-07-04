@@ -14,8 +14,6 @@
   font-weight: 900;
 }
 
-
-
 /* Reset */
 * {
   box-sizing: border-box;
@@ -25,7 +23,8 @@
 
 body {
   background-color: #FFFEFB;
-  font-family: 'Paperlogy', 'Lunasima', sans-serif;
+  font-family: 'Paperlogy', sans-serif;
+  font-weight: 400;
   color: black;
 }
 
@@ -57,14 +56,14 @@ body {
   padding: 10px;
   text-align: center;
   border: 5px solid white;
-  font-family: 'Changa One', sans-serif;
+  font-family: 'Paperlogy', sans-serif;
+  font-weight: 600;
   font-size: 30px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 .nav-button.left {
   left: 55px;
@@ -73,7 +72,6 @@ body {
 .nav-button.right {
   right: 55px;
 }
-
 
 .content-section,
 .blue-section {
@@ -85,23 +83,16 @@ body {
   background: #D0DFEC;
 }
 
-.section-title {
-  font-size: 70px;
-  font-family: 'Paperlogy', sans-serif;
-  margin-bottom: 10px;
-}
-
-/* 제목 스타일 */
+.section-title,
 .section-title2 {
   font-size: 70px;
-  font-family: 'Paperlogy', 'Bakbak One', sans-serif;
+  font-family: 'Paperlogy', sans-serif;
   font-weight: 900;
   margin-bottom: 10px;
 }
 
-/* 본문 텍스트 기본 */
 .detail-text {
-  font-family: 'Paperlogy', 'Lunasima', sans-serif;
+  font-family: 'Paperlogy', sans-serif;
   font-size: 25px;
   line-height: 30px;
   font-weight: 400;
@@ -109,9 +100,8 @@ body {
   margin: 80px auto 0 auto;
 }
 
-/* 본문 내 강조 (b 태그) */
 .detail-text b {
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .more-button {
@@ -119,9 +109,9 @@ body {
   height: 59.75px;
   background: transparent;
   border: 3px solid black;
-  font-family: 'Changa One', sans-serif;
+  font-family: 'Paperlogy', sans-serif;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 30px;
   display: flex;
   align-items: center;
@@ -129,620 +119,38 @@ body {
   cursor: pointer;
   position: absolute;
   right: 100px;
-  top: 70px; /* 위치 수정 */
+  top: 70px;
   z-index: 1;
-}
-
-.section-line {
-  width: 100%;
-  height: 3px;
-  background: black;
-  margin: 20px 0;
-}
-
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-}
-
-.image-block {
-  text-align: center;
-}
-
-.image-block img {
-  border: 1px solid black;
-  display: block;
-  margin: 0 auto;
 }
 
 .image-title {
   font-weight: 600;
   margin-top: 20px;
   font-size: 25px;
+  font-family: 'Paperlogy', sans-serif;
 }
 
 .image-desc {
   font-weight: 400;
   font-size: 20px;
+  font-family: 'Paperlogy', sans-serif;
+}
+
+.research-title-bar,
+.project-title-bar,
+.activity-title-bar,
+.contact-text {
+  font-family: 'Paperlogy', sans-serif;
+  font-weight: 600;
+}
+
+.menu-title,
+.menu-links a {
+  font-family: 'Paperlogy', sans-serif;
+  font-weight: 900;
 }
 
 .footer {
-  text-align: center;
-  font-size: 12px;
-  background: black;
-  color: white;
-  padding: 20px;
-  font-family: 'Bakbak One', sans-serif;
-  margin-top: 80px;
-}
-
-/* 이미지 별 클래스 */
-.about-img {
-  width: 437px;
-  height: 534px;
-  border: 1px solid black;
-}
-
-.about-image-wrapper {
-  position: relative;
-  width: 437px;
-  height: 534px;
-}
-
-.about-mascot-img {
-  position: absolute;
-  bottom: -80px;
-  right: -90px;
-  width: 239px;
-  height: 240px;
-}
-
-.image-block img.research-img {
-  width: 297px;
-  height: 404px;
-  border: 1px solid black;
-}
-
-.image-block img.project-img {
-  width: 670px;
-  height: 335px;
-  border: 1px solid black;
-}
-
-.image-block img.activity-img {
-  width: 525px;
-  height: 552px;
-  border: 1px solid black;
-}
-
-.contact-container {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-top: 40px;
-  position: relative;
-}
-
-.contact-grid {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 80px;
-  margin-top: 80px;
-  position: relative;
-}
-
-.contact-image-wrapper {
-  position: relative;
-  width: 478px;
-  height: 368px;
-}
-
-.contact-img {
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-}
-
-.contact-mascot-img {
-  position: absolute;
-  width: 285px;
-  height: 285px;
-  top: 180px;
-  left: -160px;
-  z-index: 2;
-  transform: rotate(168deg) scaleY(-1);
-}
-
-.contact-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 60px;
-  font-family: 'Lunasima', sans-serif;
-  font-weight: 700;
-  font-size: 35px;
-}
-
-.contact-line {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.contact-icon {
-  font-size: 50px;
-}
-
-/* 메뉴 오버레이 */
-.menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  z-index: 1000;
-  display: none;
-  overflow-y: auto;
-}
-
-.menu-overlay.active {
-  display: block;
-}
-
-/* 상단 흰색 헤더 */
-.menu-container {
-  width: 100%;
-  height: 265px;
-  background-color: #FFFEFB;
-  position: relative;
-}
-
-/* MENU 텍스트 */
-.menu-title {
-  position: absolute;
-  top: 72px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Fugaz One', sans-serif;
-  font-size: 100px;
-  color: black;
-  text-align: center;
-}
-
-/* Back 버튼 */
-.menu-back-button {
-  position: absolute;
-  top: 53px;
-  left: 25px;
-  width: 190px;
-  height: 70px;
-  border: 5px solid black;
-  background: transparent;
-  font-family: 'Changa One', sans-serif;
-  font-size: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-/* 메뉴 링크 */
-.menu-links {
-  position: absolute;
-  top: 419px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  align-items: center;
-  padding-bottom: 150px;
-}
-
-.menu-links a {
-  font-family: 'Bakbak One', sans-serif;
-  font-size: 100px;
-  color: white;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-.menu-links a:hover {
-  opacity: 0.6;
-}
-
-/* ===================== About 디자인 ===================== */
-.about-section {
-  padding: 10px 100px;
-  position: relative;
-}
-
-
-.about-wrapper {
-  max-width: 1728px;
-  margin: 0 auto;
-  padding: 60px 80px;
-  position: relative;
-}
-
-.about-profile {
-  width: 504px;
-  height: 650px;
-  object-fit: cover;
-  border: 1px solid black;
-}
-
-.about-text {
-  font-size: 25px;
-  line-height: 30px;
-  font-family: 'SCDream', 'Lunasima', sans-serif;
-  flex: 1;
-}
-
-.quote {
-  font-family: 'Carrois Gothic';
-  font-size: 40px;
-  text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: 100px;
-}
-
-.about-mascot {
-  width: 336px;
-  height: 336px;
-  position: absolute;
-  bottom: -50px;
-  left: -40px;
-  z-index: 2;
-  transform: scaleX(-1);
-}
-
-
-/* ===================== Research 디자인 ===================== */
-
-.research-block {
-  width: 100%;
-  max-width: 1422px;
-  margin: 40px auto;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.research-title-bar {
-  height: 55px;
-  background: #2B7E50;
-  color: white;
-  font-size: 30px;
-  font-family: 'SCDream', 'Lunasima', sans-serif;
-  font-weight: 700;
-  line-height: 55px;
-  padding-left: 30px;
-  border: 1px solid black;
-}
-
-.research-img {
-  width: 100%;
-  height: 271px;
-  display: block;
-  object-fit: cover;
-}
-
-.research-mascot {
-  position: absolute;
-  bottom: -700px;
-  right: 5px;
-  width: 300px;
-  height: auto;
-  z-index: 1;
-}
-
-.research-block-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-
-
-
-
-/* ===================== Projects 디자인 ===================== */
-.project-block {
-  width: 100%;
-  max-width: 1422px;
-  margin: 40px auto;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.project-title-bar {
-  height: 55px;
-  background-color: #BA4009;
-  border-bottom: 1px solid black;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  color: white;
-  font-family: 'SCDream', 'Lunasima', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.project-img {
-  width: 100%;
-  height: 271px;
-  display: block;
-  object-fit: cover;
-}
-.project-block-link {
-  text-decoration: none;
-  display: block;
-}
-
-.project-mascot {
-  position: absolute;
-  bottom: 30px;
-  left: 10px;
-  width: 300px;
-  height: auto;
-  transform: scaleX(-1);
-  z-index: 1;
-}
-
-
-
-/* ===================== ACTIVITY 디자인 ===================== */
-
-.activity-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 두 칸짜리 그리드 */
-  gap: 40px 60px; /* 세로/가로 간격 */
-  margin: 60px auto;
-  width: 90%;
-  max-width: 1400px;
-}
-
-.activity-block {
-  border: 1px solid black;
-  background-color: white;
-  width: 100%;
-}
-
-.activity-title-bar {
-  background-color: #2B64A0;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  font-family: 'SCDream', 'Lunasima', sans-serif;
-  border-bottom: 1px solid black;
-}
-
-.activity-img {
-  width: 100%;
-  height: 270px;
-  display: block;
-  object-fit: cover;
-}
-
-.activity-block-link {
-  text-decoration: none;
-  display: block;
-}
-
-
-.activity-mascots {
-  display: flex;
-  justify-content: center;   /* 중앙 정렬 */
-  gap: 50px;                 /* 마스코트 사이 간격 */
-  margin: 60px auto 0;
-}
-
-.activity-mascots img {
-  width: 250px;
-  height: auto;
-  transform: scaleX(-1);
-}
-
-
-/* ===================== 내부 사이트 디자인 ===================== */
-.detail-mascot-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 15px;
-  margin-top: 20px;
-  margin-bottom: -60px;
-  padding-right: 10px;
-  z-index: 1;
-}
-
-.detail-mascot {
-  width: 300px;
-  height: 300px;
-  transform: scaleX(-1);
-}
-
-
-
-/* ===================== Contact 디자인 ===================== */
-.contact-mascot-small {
-  width: 160px;
-  height: 160px;
-}
-
-.mascot-row {
-  display: flex;
-  gap: 5px;
-  margin-top: 10px;
-}
-
-.contact-extra-images {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  margin-top: 60px;
-}
-
-.contact-box-img {
-  width: 626px;
-  height: 337px;
-  border: 1px solid black;
-  object-fit: cover;
-}
-
-.contact-inline {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  margin-bottom: 12px; 
-  line-height: 0.2; 
-}
-
-
-
-
-/* ========================================== 반응형 디자인 ========================================== */
-@media (max-width: 480px) {
-  body {
-    font-size: 12px;
-  }
-
-  .header {
-    padding: 20px 10px;
-  }
-
-  .header h1 {
-    font-size: 28px;
-  }
-
-  .header p {
-    font-size: 12px;
-    padding: 0 10px;
-  }
-
-  .nav-button {
-    width: 60px;
-    height: 30px;
-    font-size: 10px;
-    top: 10px;
-    padding: 2px;
-    border-width: 2px;
-  }
-
-  .nav-button.left {
-    left: 10px;
-  }
-
-  .nav-button.right {
-    right: 10px;
-  }
-
-  .content-section,
-  .blue-section {
-    padding: 20px 16px;
-  }
-
-  .section-title {
-    font-size: 20px;
-  }
-
-  .more-button {
-    position: static;
-    width: 60px;
-    height: 28px;
-    font-size: 10px;
-    margin-top: 10px;
-    border-width: 1.5px;
-  }
-
-  .section-line {
-    margin: 10px 0;
-    height: 1.5px;
-  }
-
-  .image-grid {
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-  }
-
-  .image-block {
-    width: 100% !important;
-    margin: 0 auto;
-  }
-
-  .about-image-wrapper,
-  .contact-image-wrapper {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-  }
-
-  .about-img,
-  .research-img,
-  .project-img,
-  .activity-img,
-  .contact-img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100% !important;
-    display: block !important;
-  }
-
-  .about-mascot-img,
-  .contact-mascot-img {
-    width: 60px !important;
-    height: auto !important;
-    transform: none !important;
-    position: static !important;
-    margin-top: 10px;
-  }
-
-  .contact-grid {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .contact-text {
-    font-size: 12px;
-    gap: 12px;
-    text-align: center;
-  }
-
-  .contact-line {
-    justify-content: center;
-    font-size: 12px;
-  }
-
-  .contact-icon {
-    font-size: 16px;
-  }
-
-  .menu-title {
-    font-size: 28px;
-    top: 36px;
-  }
-
-  .menu-links {
-    top: 140px;
-    gap: 30px;
-  }
-
-  .menu-links a {
-    font-size: 22px;
-  }
-
-  .footer {
-    font-size: 5px;
-    padding: 12px;
-    line-height: 14px;
-    word-break: keep-all;
-  }
+  font-family: 'Paperlogy', sans-serif;
+  font-weight: 400;
 }
