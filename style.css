@@ -25,7 +25,7 @@
 
 body {
   background-color: #FFFEFB;
-  font-family: 'SCDream', 'Lunasima', sans-serif;
+  font-family: 'Paperlogy', 'Lunasima', sans-serif;
   color: black;
 }
 
@@ -94,14 +94,14 @@ body {
 /* 제목 스타일 */
 .section-title2 {
   font-size: 70px;
-  font-family: 'SCDream', 'Bakbak One', sans-serif;
+  font-family: 'Paperlogy', 'Bakbak One', sans-serif;
   font-weight: 900;
   margin-bottom: 10px;
 }
 
 /* 본문 텍스트 기본 */
 .detail-text {
-  font-family: 'SCDream', 'Lunasima', sans-serif;
+  font-family: 'Paperlogy', 'Lunasima', sans-serif;
   font-size: 25px;
   line-height: 30px;
   font-weight: 400;
