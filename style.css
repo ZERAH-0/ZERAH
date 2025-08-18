@@ -261,7 +261,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
   font-family: 'Lunasima', sans-serif;
   font-weight: 700;
   font-size: 35px;
