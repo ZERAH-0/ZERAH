@@ -112,7 +112,7 @@ body {
 
 /* 본문 내 강조 (b 태그) */
 .detail-text b {
-  font-weight: 600; 
+  font-weight: 500; 
 }
 
 .more-button {
