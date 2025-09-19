@@ -181,8 +181,8 @@ body {
 
 /* 이미지 별 클래스 */
 .about-img {
-  width: 260px;
-  height: 320px;
+  width: 400px;
+  height: 500px;
   border: 1px solid black;
 }
 
