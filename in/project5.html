@@ -109,21 +109,21 @@
         <br><br>&emsp; 📌 개발 방식 (Development)
       </div>
       <div style="font-size: 25px; line-height: 1.8; margin-top: 30px;">
-        &emsp;&emsp;• AI 로직
+        &emsp;&emsp;• AI 로직 <br>
         &emsp;&emsp;&emsp;- OpenAI GPT API로 끝말잇기 규칙을 정의한 프롬프트 설계 (금칙어·중복 방지 포함).<br>
         &emsp;&emsp;&emsp;- AI가 이전 단어의 마지막 글자를 기준으로 단어를 생성하도록 유도.<br>
         &emsp;&emsp;&emsp;- 잘못된 단어나 중복 시 자동 재시도 루프 처리.<br><br>
 
-        &emsp;&emsp;• 음성 합성 및 출력
+        &emsp;&emsp;• 음성 합성 및 출력 <br>
         &emsp;&emsp;&emsp;- Azure Speech TTS(한국어 ‘서현’)을 이용해 AI의 응답을 실시간 음성으로 출력.<br>
         &emsp;&emsp;&emsp;-텍스트 버블과 음성 타이밍을 동기화하여 자연스러운 대화 흐름 구현.<br><br>
 
-        &emsp;&emsp;• UI/UX 구조
+        &emsp;&emsp;• UI/UX 구조 <br>
         &emsp;&emsp;&emsp;- 플레이어(노랑)와 AI(하늘색)의 양방향 말풍선 UI 구현.<br>
         &emsp;&emsp;&emsp;- 턴 전환 시 말풍선이 자연스럽게 등장·퇴장되는 애니메이션 적용.<br>
         &emsp;&emsp;&emsp;- 캐릭터 ‘Wordy’의 표정이 AI의 감정 상태에 따라 변하도록 애니메이션 매핑.<br><br>
 
-        &emsp;&emsp;• 턴 및 데이터 관리
+        &emsp;&emsp;• 턴 및 데이터 관리 <br>
         &emsp;&emsp;&emsp;- TurnManager에서 사용자 입력 → AI 응답 → 결과 검증 → 점수 업데이트까지 일괄 제어.<br>
         &emsp;&emsp;&emsp;- 대화 이력은 JSON 형태로 저장되어, 재시작 시 복원 가능.<br><br>
 
