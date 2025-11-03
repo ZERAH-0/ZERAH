@@ -97,9 +97,9 @@
         &emsp;&emsp;이 프로젝트는 컴퓨터 그래픽스와 딥러닝의 융합 실험으로,<br>
         (1) PyTorch3D 기반 3D Mesh 최적화 실험과<br>
         (2) 강화학습(DQN)을 활용한 물리 시뮬레이션 제어 학습<br>
-        두 축으로 이루어졌다. <br>
-        두 연구 모두 그래픽스 모델을 ‘데이터’가 아닌 ‘학습 가능한 물리 구조물’로 다루며,
-        AI가 시각적·물리적 피드백을 학습하는 시스템을 탐구하는 것을 목표로 했다.<br><br>
+        &emsp;&emsp;두 축으로 이루어졌다. <br>
+        &emsp;&emsp;두 연구 모두 그래픽스 모델을 ‘데이터’가 아닌 ‘학습 가능한 물리 구조물’로 다루며,
+        &emsp;&emsp;AI가 시각적·물리적 피드백을 학습하는 시스템을 탐구하는 것을 목표로 했다.<br><br>
       </div>
 
        
@@ -115,7 +115,7 @@
         가중치 및 옵티마이저(Adam / Momentum)를 비교하면서
         손실 변화와 시각적 품질의 상관성을 분석하였다.<br><br>
 
-        &emsp;&emsp; 주요 결과: 
+        &emsp;&emsp; 주요 결과: <br>
         &emsp;&emsp;&emsp;• Uniform Laplacian 방식이 Cotangent보다 안정적인 형태 유지에 효과적임을 확인.<br>
         &emsp;&emsp;&emsp;• Momentum Optimizer가 Adam보다 Cat 모델의 형상 왜곡을 덜 유발.<br><br>
 
@@ -138,7 +138,7 @@
         경험 리플레이(Experience Replay)와 타깃 네트워크(Target Network)를 병행하며
         학습 안정성을 확보했고, 파라미터 변화가 에이전트의 의사결정에 미치는 영향을 시각화했다.<br><br>
 
-        &emsp;&emsp; 실험 결과: 
+        &emsp;&emsp; 실험 결과: <br>
         &emsp;&emsp;&emsp;• 초기 단계에서는 탐험(Exploration)이 우세, 500 에피소드 이후 수렴 경향.<br>
         &emsp;&emsp;&emsp;• ε-Decay를 조정하여 학습 효율 개선.<br>
         &emsp;&emsp;&emsp;• α(학습률)와 γ(할인율) 튜닝을 통해 Landing Precision 86% 달성.<br>
