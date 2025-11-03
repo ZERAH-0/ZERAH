@@ -82,50 +82,53 @@
 
         
         <p style="font-size: 25px; line-height: 1.8; margin-top: 30px;">
-        &emsp; 기간: 2025.03 - 2025.08 <br>
-        &emsp; 참여: 개발 3인<br>
-        &emsp; 역할: 메인 프로그래머 · 보스전 시스템 총괄<br>
-        &emsp; 엔진/플랫폼: Custom(C++/SDL2) · PC <br></p></p>
+        &emsp; 기간: 2025.09 - 2025.10 <br>
+        &emsp; 역할: 단독 개발 (AI 로직 · UI · 음성 통합)<br>
+        &emsp; 엔진: Unity 2022 LTS<br>
+        &emsp; 기술 스택: OpenAI API, Azure Speech TTS, C#, JSON, Unity UI<br>
+        &emsp; 플랫폼: PC / Web <br></p></p>
 
 
 
 
   
-      <!-- 연구 개요 -->
+      <!-- 개요 -->
       <div style="font-size: 30px; font-weight: bold; margin-bottom: 40px;">
         <br><br>&emsp; 📌 프로젝트 개요 (Overview)
       </div>
       <div style="font-size: 25px; line-height: 1.8; margin-top: 30px;">
-        &emsp;&emsp;상용 엔진 없이 C++/SDL2로 렌더링·오디오·입력·충돌·상태 전이까지 직접 구현한 2D 액션 어드벤처.
-        인트로→스테이지1~7→엔딩으로 이어지는 페이즈 구조를 갖고, 보스전(Stage 6)을 핵심 전투 경험으로 설계.
-        네가 보스전 AI/패턴·UI·초기화 흐름을 중심으로 전체 전투 사이클을 구현했고, 중간/최종 발표도 담당.<br><br>
+        &emsp;&emsp;<b>‘AI와 끝말잇기’</b>는 인공지능과 사람이 단어를 주고받으며 경쟁하는 대화형 인터랙티브 게임이다.
+        OpenAI의 언어 모델을 활용해 자연어 규칙 기반의 끝말잇기 로직을 구성하고,
+        Azure TTS를 연동해 AI가 실제 목소리로 단어를 발음하도록 구현했다.
+        단순한 문자 입력 게임을 넘어, AI의 말투·표정·감정이 반영되는 시각적·청각적 인터랙션을 설계했다.<br><br>
       </div>
 
        
-      <!-- 구현 방식 -->
+      <!-- 개발 방식 -->
       <div style="font-size: 30px; font-weight: bold; margin-bottom: 40px;">
-        <br><br>&emsp; 📌 구현 방식 (Development)
+        <br><br>&emsp; 📌 개발 방식 (Development)
       </div>
       <div style="font-size: 25px; line-height: 1.8; margin-top: 30px;">
-        &emsp;&emsp;• 프레임워크: SDL_Init/IMG/TTF/Mixer 초기화 → SDL_CreateWindow(800×800) · SDL_CreateRenderer(SDL_RENDERER_ACCELERATED) 메인 루프는 **약 30FPS 고정(33ms 간격)**으로 이벤트/업데이트/렌더 순환.<br>
-        &emsp;&emsp;• 페이즈 매니저: main_cbgame.cpp에서 game_phases[]로 각 씬 등록, PHASE_STAGE1~7/INTRO/ENDING/DIE 전환.<br>
-        &emsp;&emsp;• 스테이지 구조: 각 스테이지는 독립 클래스(stage1_home.cpp … stage7_she.cpp). 보스전은 stage6_bridge.(h|cpp)로 분리.<br>
-        &emsp;&emsp;• 자원 관리: IMG_Load→SDL_CreateTextureFromSurface로 배경/문/미션/HP/탄막 등 텍스처 로딩, SDL_mixer로 BGM(bgm_stage_boss.mp3)·SFX(피격/잠수/비늘 등) 볼륨/채널 관리.<br><br>
+        &emsp;&emsp;• AI 로직
+        &emsp;&emsp;&emsp;- OpenAI GPT API로 끝말잇기 규칙을 정의한 프롬프트 설계 (금칙어·중복 방지 포함).<br>
+        &emsp;&emsp;&emsp;- AI가 이전 단어의 마지막 글자를 기준으로 단어를 생성하도록 유도.<br>
+        &emsp;&emsp;&emsp;- 잘못된 단어나 중복 시 자동 재시도 루프 처리.<br><br>
+
+        &emsp;&emsp;• 음성 합성 및 출력
+        &emsp;&emsp;&emsp;- Azure Speech TTS(한국어 ‘서현’)을 이용해 AI의 응답을 실시간 음성으로 출력.<br>
+        &emsp;&emsp;&emsp;-텍스트 버블과 음성 타이밍을 동기화하여 자연스러운 대화 흐름 구현.<br><br>
+
+        &emsp;&emsp;• UI/UX 구조
+        &emsp;&emsp;&emsp;- 플레이어(노랑)와 AI(하늘색)의 양방향 말풍선 UI 구현.<br>
+        &emsp;&emsp;&emsp;- 턴 전환 시 말풍선이 자연스럽게 등장·퇴장되는 애니메이션 적용.<br>
+        &emsp;&emsp;&emsp;- 캐릭터 ‘Wordy’의 표정이 AI의 감정 상태에 따라 변하도록 애니메이션 매핑.<br><br>
+
+        &emsp;&emsp;• 턴 및 데이터 관리
+        &emsp;&emsp;&emsp;- TurnManager에서 사용자 입력 → AI 응답 → 결과 검증 → 점수 업데이트까지 일괄 제어.<br>
+        &emsp;&emsp;&emsp;- 대화 이력은 JSON 형태로 저장되어, 재시작 시 복원 가능.<br><br>
+
       </div>
 
-
-
-
-      <!-- 협업 및 기여 -->
-      <div style="font-size: 30px; font-weight: bold; margin-bottom: 40px;">
-        <br><br>&emsp; 📌 팀 협업 & 기여 (Role & Contribution)
-      </div>
-      <div style="font-size: 25px; line-height: 1.8; margin-top: 30px;">
-        &emsp;&emsp;• 보스전 전반(패턴/타이밍/HP UI/문 오픈/미션 연출/사운드/리셋 흐름) 직접 설계·구현.<br>
-        &emsp;&emsp;• 오브젝트 풀(비늘/총알)과 타이머 기반 상태기계(잠수/예고/공격)로 프레임 안정성 확보.<br>
-        &emsp;&emsp;• 스테이지 클래스 분리와 페이즈 전이 규약 정리로 병렬 개발 가능하도록 구조화.<br>
-        &emsp;&emsp;• 중간/최종 발표에서 구조·패턴·디버깅 포인트 설명 및 데모 진행.<br><br>
-      </div>
 
 
 
@@ -134,11 +137,11 @@
         <br><br>&emsp; 📌 주요 특징 (Features)
       </div>
       <div style="font-size: 25px; line-height: 1.8; margin-top: 30px;">
-        &emsp;&emsp;• 페이즈 아키텍처: PhaseInterface{HandleEvents/Update/Render} 표준화 → 씬 독립성/가독성↑<br>
-        &emsp;&emsp;• 보스전 루프: 예고→잠수→공격→후퇴 4단계 구조, SFX·UI·충돌 동기화<br>
-        &emsp;&emsp;• UI/연출: HP 15칸, 미션 페이드, 미니맵/지도, 클리어 문 오픈.<br>
-        &emsp;&emsp;• 오디오: BGM/효과음 볼륨/채널 관리, 이벤트 지점에 정밀 트리거<br>
-        &emsp;&emsp;• 성능/안정성: 30FPS 고정 루프, 오브젝트 풀로 할당/해제 최소화, 재시작 완전 초기화<br><br>
+        &emsp;&emsp;• 대화형 인터랙션: AI가 음성·표정·말풍선으로 실시간 반응하며 사람처럼 대화하는 구조 구현.<br>
+        &emsp;&emsp;• 감정 기반 반응: 단어 난이도·턴 상황에 따라 다른 어조(놀람·고민·장난 등)로 음성 표현.<br>
+        &emsp;&emsp;• 실시간 음성 출력: AI의 발화가 곧바로 출력되며, 대화 텍스트와 정확히 동기화됨.<br>
+        &emsp;&emsp;• AI 메모리 시뮬레이션: 이전 대화 기록 기반으로 중복 단어 방지 및 문맥 유지 기능 구현.<br>
+        &emsp;&emsp;• UI 애니메이션: 대화 버블 생성·사라짐 타이밍을 오디오 재생 타이밍과 일치시켜 몰입감 강화.<br><br>
       </div>
 
        
@@ -147,10 +150,10 @@
         <br><br>&emsp; 📌 성과 & 인사이트 (Outcome & Insights)
       </div>
       <div style="font-size: 25px; line-height: 1.8; margin-top: 30px;">
-        &emsp;&emsp;• 엔진 없이 저수준 API만으로 전투 사이클과 보스 AI를 완주하며 렌더/입력/오디오/상태 전이 전 과정 숙달.<br>
-        &emsp;&emsp;• 타이밍 제어·상태기계·오브젝트 풀링이 실전 안정성에 결정적임을 체득.<br>
-        &emsp;&emsp;• 팀 3인 체제에서 클래스 분할·규약화로 협업 속도와 유지보수성 향상.<br>
-        &emsp;&emsp;• 이후 과제(Projectile/Snake 등)에서도 패턴·초기화·UI 연동 설계가 재사용되는 기반이 됨.<br><br><br><br>
+        &emsp;&emsp;• OpenAI API와 Azure TTS를 실시간으로 연동하며 AI 대화·음성 통합 파이프라인 완성.<br>
+        &emsp;&emsp;• 프롬프트 설계, 비동기 통신, 예외 처리 등 AI 인터랙션 설계의 핵심 기술 습득.<br>
+        &emsp;&emsp;• 시각·청각·언어를 결합한 감정 기반 대화형 UX를 구현하면서 AI 캐릭터 연출에 대한 통찰을 얻음.<br>
+        &emsp;&emsp;• 해당 구조를 확장해 이후 프로젝트(“감정형 캐릭터 시뮬레이션”)의 기반으로 발전시킴.<br><br><br><br>
       </div>
 
 
@@ -158,7 +161,7 @@
       <div style="font-size: 30px; font-weight: bold; margin-bottom: 40px;">
         &emsp;📌 핵심 기술 (Core Stack)</div>
      <p style="font-size: 25px; line-height: 1.8; margin-top: 30px;">
-          <b>&emsp;&emsp; C++ / SDL2 / Game Loop / State Machine / Boss AI / Object Pooling / SDL_mixer / IMG / TTF / 2D Rendering </b>
+          <b>&emsp;&emsp; Unity / C# / OpenAI API / Azure TTS / Interactive Game / Chat UI / Emotion-driven AI / Async System / JSON Data / Real-time Dialogue </b>
       </p>
  </div>   
 
